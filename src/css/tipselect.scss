@@ -1,0 +1,32 @@
+@import "~css/common";
+
+.tipselect{position:fixed;left:0;right:0;top:0;bottom:0;z-index:99;background-color:rgba(0, 0, 0, 0.5);}
+.tipselect .tipbd{position: absolute; left:50%; top:50%; -webkit-transform:translate(-50%,-50%); transform:translate(-50%,-50%);width:12.6rem;margin:0 auto;background:#fff;box-shadow:0 2px 4px 0 rgba(181,181,181,0.50);border-radius:5px;width:13.45rem;padding:5px 0;font-size:0.8rem;}
+.tipselect .tipbd p{width:12.6rem;margin:0 auto;}
+.tipselect .tipbd p:nth-child(1){padding:0.8rem 0;border-bottom:pxToRem(0.5px) solid #c7c7cc;color:#1d1d1d;text-align:center;}
+.tipselect .tipbd p:nth-child(2){margin-top:0.3rem;display:flex;display:-webkit-flex;height:pxToRem(44px);flex-direction:row;flex-wrap:nowrap;justify-content:space-around;align-items:center;}
+.tipselect .tipbd p:nth-child(2) span{display:inline-block;flex:1;font-size:0.8rem;
+color:#31dac3;height:2rem;line-height:2rem;text-align:center;}
+.tipselect .tipbd p:nth-child(2) span:nth-child(2){border-left:pxToRem(0.5px) solid #c7c7cc;}
+
+.tipselect .tip_only_msg{position: absolute; left:50%; top:50%; -webkit-transform:translate(-50%,-50%); transform:translate(-50%,-50%);background:#fff;width:13.45rem;line-height:pxToRem(50px);font-size:0.8rem;box-shadow:0 2px 4px 0 rgba(181,181,181,0.50);border-radius:5px;text-align:center;}
+
+.tipselect .tip_two_msg{position: absolute; left:50%; top:50%; -webkit-transform:translate(-50%,-50%); transform:translate(-50%,-50%);background:#fff;width:13.45rem;font-size:0.8rem;box-shadow:0 2px 4px 0 rgba(181,181,181,0.50);border-radius:5px;text-align:center;
+}
+.tipselect .tip_two_msg p{line-height:pxToRem(50px); font-size:pxToRem(16px);}
+.tipselect .tip_two_msg p:nth-child(2){border-top:1px solid #f0f0f0;color:#be2a1f;}
+
+.tipselectAnimate-enter {
+    transition: opacity 0.4s ;
+    opacity : 0;
+}
+.tipselectAnimate-enter.tipselectAnimate-enter-active {
+    opacity : 1;
+}
+.tipselectAnimate-leave {
+	opacity : 1;
+    transition: opacity 0.4s ;
+}
+.tipselectAnimate-leave.tipselectAnimate-leave-active {
+    opacity : 0;
+}

@@ -1,0 +1,484 @@
+@import "~css/common";
+
+#syslist{
+	background : #efeef4;
+	min-height : calc(100vh - 3.2rem);
+	padding-bottom : 0;
+}
+.indexPage{
+	padding-bottom : pxToRem(48px);
+
+	.tipshowend{
+		background : #fafafa;
+	}
+	.tip{
+		top : pxToRem(44px);
+		.tip_type{
+			top : 42%;
+		}
+	}
+	&>.hd{
+		overflow : hidden;
+		position : fixed;
+		left : 0;
+		top : 0;
+		width : 100%;
+		background-image : linear-gradient(45deg,#00D7CC,#2FE9BB);
+		z-index : 80;
+		height : pxToRem(64px);
+		padding-top : pxToRem(20px);
+
+		ul{
+			width : pxToRem(150px);
+			text-align : center;
+			margin : 0 auto;
+
+			li{
+				display : inline-block;
+				width : pxToRem(50px);
+				height : pxToRem(43px);
+				line-height : pxToRem(43px);
+				text-align : center;
+				font-size : pxToRem(18px);
+				color : #fff;
+
+				&.on{
+					color : #26c680;
+					border-bottom : 2px solid #26c680;
+				}
+			}
+		}
+	}
+	&>.hd2{
+		position : fixed;
+		top : 0;
+		left : 0;
+		width : 100%;
+		background-image : linear-gradient(45deg,#00D7CC,#2FE9BB);
+		display : flex;
+		display : -webkit-flex;
+		flex-direction : row;
+		flex-wrap : nowrap;
+		justify-content : space-around;
+		align-items : center;
+		color : #fff;
+		height : pxToRem(64px);
+		padding : pxToRem(20px) pxToRem(14px) 0 pxToRem(14px);
+		z-index : 80;
+
+		span{
+			flex : 1;
+			a{
+				display : block;
+			}
+			i{
+				position : relative;
+				top : 2px;
+				display : inline-block;
+				background-position : pxToRem(-104.5px) pxToRem(-14.5px);
+				width : pxToRem(10px);
+				height : pxToRem(18px);
+			}
+			&:nth-child(2){
+				flex : 1;
+				text-align : center;
+				font-size : pxToRem(17px);
+			}
+			&:last-child{
+				text-align : right;
+			}
+		}
+	}
+	.updatamsg{
+		visibility : hidden;
+		position : fixed;
+		top : pxToRem(64px);
+		left : 0;
+		width : 100%;
+		height : pxToRem(35px);
+		line-height : pxToRem(35px);
+		text-align : center;
+		color : #b2b6bd;
+
+	img{
+		position : relative;
+		top : pxToRem(7px);
+		display : inline-block;
+		width : 21px;
+		margin : 0 pxToRem(10px) 0 0;
+	}
+	}
+	.box{
+		margin-top : pxToRem(64px);
+		ul.livelist{
+			min-height : calc(100vh - 93px);
+			background : #fafafa;
+			
+			.tip_type{
+				top : 42%;
+			}
+
+			li{
+				padding : pxToRem(5px) pxToRem(10px) pxToRem(15px) pxToRem(10px);
+				font-size : pxToRem(12px);
+				border-radius:1px;
+				margin-bottom : pxToRem(10px);
+				background : #fff;
+				
+				p.title{
+					padding : pxToRem(8px) pxToRem(4px);
+
+					label{
+						float : left;
+						display : inline;
+						width : pxToRem(43px);
+						height : pxToRem(43px);
+						border-radius : pxToRem(5px);
+						background : #fff;
+						box-shadow : 0 2px 4px 0 rgba(140,140,140,0.30);
+						text-align : center;
+						
+						img{
+							width : pxToRem(41px);
+							height : pxToRem(41px);
+							border-radius : pxToRem(5px);
+							margin-top : pxToRem(1px);
+						}
+					}
+					span{
+						float : left;
+						display : inline;
+						margin-left : pxToRem(9px);
+						color : #4f4f4f;
+						
+						em{
+							display : block;
+							text-overflow : ellipsis;
+							color : #8c8c8c;
+							font-size : pxToRem(14px);
+							&:nth-child(1){
+								margin-bottom : pxToRem(8px);
+								font-size : pxToRem(16px);
+								color : #1d1d1d;
+							}
+							i{
+								position : relative;
+								top : pxToRem(3px);
+								background-position : pxToRem(-230px) pxToRem(-209.5px);
+								width : pxToRem(14px);
+								height : pxToRem(14px);
+								margin-right : pxToRem(5px);
+							}
+						}
+					}
+				}
+				p.bo{
+					position : relative;
+					width : 100%;
+					height : pxToRem(200px);
+					background : #000;
+					border-radius : 5px;
+					img{
+						width : 100%;
+						height : 100%;
+					}
+					em{
+						text-align : center;
+						color : #fff;
+						line-height : pxToRem(28px);
+						position: absolute;
+						right : pxToRem(10px); 
+						top : pxToRem(10px);
+						background-color : rgba(255,255,255,0.8);
+						border-radius : 100px;
+						font-size : pxToRem(12px);
+						color : #1d1d1d;
+						padding : 0 pxToRem(8px);
+
+						i.onlive{
+							display : inline-block;
+							background : #ff4b4b;
+							width : pxToRem(9px);
+							height : pxToRem(9px);
+							border-radius : 100%;
+							margin-right : pxToRem(5px);
+						}
+					}
+
+					span{
+						position : absolute;
+						bottom : 2px;
+						left : 4px;
+						color : #fff;
+					}
+				}
+				b.detail{
+					display : block;
+					position: absolute;
+					left : pxToRem(10px); 
+					bottom : pxToRem(8px); 
+					overflow: hidden;
+					display: inline-block;
+					white-space : nowrap;
+					text-overflow : ellipsis;
+					padding : 0 pxToRem(13px) 0 pxToRem(5px);
+					background-color : rgba(0,0,0,0.5);
+					border-radius : pxToRem(100px);
+					color : #fff;
+					width : pxToRem(200px);
+					line-height : pxToRem(27px);
+					font-size : pxToRem(14px);
+					
+					i{
+						position : relative;
+						top : pxToRem(4.5px);
+						background-position : pxToRem(-226.5px) pxToRem(-181px);
+						width : pxToRem(21px);
+						height : pxToRem(20px);
+						margin-right : pxToRem(9px);
+					}
+				}
+			}
+		}
+	}
+	.syslist{
+		background : #fff;
+		margin-top : pxToRem(75px);
+		min-height : calc(100vh - 44px);
+		
+		li{
+			padding : pxToRem(10px) 0 0 pxToRem(10px);
+
+			div.left{
+				position : relative;
+				float : left;
+				dispaly : inline;
+				width : pxToRem(45px);
+				height : pxToRem(45px);
+
+				label{
+					display : block;
+					box-shadow : 0 2px 4px 0 rgba(189,189,189,0.50);
+					border-radius : 5px;
+					width : pxToRem(48px);
+					height : pxToRem(48px);
+					img{
+						border-radius : 5px;
+						width : 100%;
+						height : 100%;
+					}
+				}
+				
+				b{
+					position : absolute;
+					top : pxToRem(-3px);
+					right : pxToRem(-3px);
+					border-radius : 100%;
+					width : pxToRem(15px);
+					line-height : pxToRem(15px);
+					background : #ff4b4b;
+					font-size : pxToRem(10px);
+					text-align : center;
+					color : #fff;
+				}
+			}
+			div.right{
+				overflow : hidden;
+				float : left;
+				display : inline;
+				margin-left : pxToRem(13px);
+				width : calc(100% - 75px);
+				border-bottom : pxToRem(0.5px) solid #c7c7cc;
+				padding : pxToRem(3px) 0 pxToRem(15px) 0;
+
+				p{
+					overflow : hidden;
+					font-size : pxToRem(12px);
+					color : #a5aab2;
+					width : 99%;
+					white-space : nowrap;
+					text-overflow : ellipsis;
+
+					span{
+						overflow : hidden;
+						float : left;
+						display : inline;
+						white-space : nowrap;
+						text-overflow : ellipsis;
+						font-size : pxToRem(16px);
+						color : #1d1d1d;
+						width : 75%;
+					}
+					em{
+						float : right;
+						display : inline;
+						color : #8c8c8c;
+					}
+					&:nth-child(2){
+						margin-top : 10px;
+					}
+				}
+			}
+		}
+	}
+	.box2{
+		overflow : hidden;
+		position : relative;
+		background : #fff;
+
+		.boxhd2{
+			overflow : hidden;
+			padding : pxToRem(10px) pxToRem(13px);
+			img{
+				float : left;
+				display : inline;
+				width : pxToRem(50px);
+				height : pxToRem(50px);
+				border-radius : 100%;
+			}
+			p{
+				float : left;
+				display : inline;
+				margin : pxToRem(5px) 0 0 pxToRem(10px);
+				width : 70%;
+
+				span{
+					display : block;
+					color : #535353;
+					padding : pxToRem(3px) 0;
+					&:nth-child(2){
+						font-size : pxToRem(12px);
+						color : #a5aab2;
+					}
+				}
+			}
+			em{
+				float : right;
+				display : inline;
+				color : #a5aab2;
+				font-size : pxToRem(12px);
+				i{
+					position : relative;
+					top : pxToRem(3.5px);
+					margin-right : pxToRem(5px);
+					background-position : 0 pxToRem(-385px);
+					width : pxToRem(15px);
+					height : pxToRem(15px);
+				}
+			}
+		}
+		.boxbd2{
+			padding : 0 pxToRem(13px);
+			line-height : pxToRem(25px);
+			
+			p{
+				width : 100%;
+				line-height : pxToRem(22px);
+				word-wrap : break-word;
+
+				&.remove{
+					color : #688299;
+					padding : pxToRem(5px) 0;
+					text-align : right;
+				}
+			}
+			ul.imglist{
+				width : 100%;
+
+				li{
+					overflow : hidden;
+					display : inline-block;
+					width : pxToRem(100px);
+					height : pxToRem(100px);
+					margin-left : pxToRem(5px);
+					
+					&:nth-child(2n+1){
+						margin-left : 0;
+					}
+					&.long{
+						display : -webkit-flex;
+						display : flex;
+						flex-direction : row;
+						flex-wrap : nowrap;
+						justify-content : space-around;
+						align-items : center;
+						width : 100%;
+						padding : pxToRem(10px);
+						background : #ecf0f1;
+						height : auto;
+
+						img{
+							width : 100%;
+							height : auto;
+							flex : 1;
+						}
+						a:nth-child(1){
+							flex : 1;
+						}
+						a:nth-child(2){
+							flex :2;
+						}
+						p{
+							padding : 0 pxToRem(5px);
+							line-height : pxToRem(25px);
+							span{
+								color : #4b90e2;
+							}
+						}
+					}
+				}
+			}
+		}
+		.ft2{
+			overflow : hidden;
+			border-top : 1px solid #f0f0f0;
+			padding : pxToRem(10px) 0;
+			span{
+				float : right;
+				display : inline;
+				margin-right : pxToRem(20px);
+				i{
+					position : relative;
+					top : pxToRem(3px);
+					margin-right : pxToRem(7px);
+				}
+				i.a{
+					background-position : pxToRem(-28px) pxToRem(-361.5px);
+					width : pxToRem(19px);
+					height : pxToRem(18.5px);
+
+					&.on{
+						background-position : pxToRem(-51px) pxToRem(-361.5px);
+					}
+				}
+				i.b{
+					background-position : pxToRem(-78px) pxToRem(-360.5px);
+					width : pxToRem(21px);
+					height : pxToRem(18.5px);
+				}
+				i.c{
+					background-position : pxToRem(-28px) pxToRem(-381.5px);
+					width : pxToRem(19px);
+					height : pxToRem(18.5px);
+
+					&.on{
+						background-position : pxToRem(-51px) pxToRem(-381.5px);
+					}
+				}
+			}
+		}
+	}
+}
+.indexdynamic{
+	margin-top : pxToRem(44px);
+}
+.dynamic{
+	h1{
+		color : #a5aab2;
+		font-size : pxToRem(16px);
+		padding : pxToRem(5px) 0 pxToRem(5px) pxToRem(14px);
+	}
+	.box{
+		margin-bottom : pxToRem(10px);
+	}
+}

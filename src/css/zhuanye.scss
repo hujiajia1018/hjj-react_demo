@@ -1,0 +1,153 @@
+@import "~css/common";
+
+.zhuanye{
+	position : absolute;
+	top : 0;
+	bottom : 0;
+	left : 0;
+	right : 0;
+	background : #fff;
+	z-index : 20;
+
+	&>.hd{
+		position : fixed;
+		width : 100%;
+		left : 0;
+		top : 0;
+		display : flex;
+		display : -webkit-flex;
+		height : pxToRem(64px);
+		flex-direction : row;
+		flex-wrap : nowrap;
+		justify-content : space-around;
+		align-items : center;
+		color : #fff;
+		background-image : linear-gradient(45deg,#00D7CC,#2FE9BB);
+		padding : pxToRem(20px) pxToRem(14px) 0 pxToRem(14px);
+		z-index : 22;
+		span.zy{
+			flex : 1;
+			font-size : pxToRem(14px);
+
+			i{
+				position : relative;
+				top : 2px;
+				margin-right : pxToRem(3px);
+				background-position : pxToRem(-104.5px) pxToRem(-14.5px);
+				width : pxToRem(15px);
+				height : pxToRem(23px);
+			}
+			&:nth-child(2){
+				flex : 1;
+				text-align : center;
+				font-size : pxToRem(17px);
+			}
+		}
+	}
+	.titlemsg{
+		color : #8c8c8c;
+		background : #FFFDEE;
+		line-height : pxToRem(35px);
+		text-align : center;
+		
+		i{
+			position : relative;
+			top : 3px;
+			margin-right : pxToRem(10px);
+			background-position : pxToRem(-24px) pxToRem(-76px);
+			width : pxToRem(15px);
+			height : pxToRem(15px);
+		}
+	}
+	.bdzhuanye{
+		position : relative;
+		margin-top : pxToRem(64px);
+		min-height : 100%;
+
+		.zhuanyeul1{
+			position : fixed;
+			top : pxToRem(95px);
+			left: 2%;
+			background : #fff;
+			height : calc(100vh - 4.95rem);
+			width : 96%;
+			overflow-y : scroll;
+
+			&>li{
+				line-height : pxToRem(50px);
+				color : #1d1d1d;
+				font-size : pxToRem(14px);
+				text-align : left;
+				border-bottom : 1px solid #f0f0f0;
+				padding-left : pxToRem(17px);
+
+				i{
+					float : right;
+					display : inline;
+					margin : pxToRem(21px) pxToRem(10px) 0 0;
+					background-position : pxToRem(-32.5px) pxToRem(-56px);
+					width : pxToRem(8px);
+					height : pxToRem(12px);
+				}
+				&.on{
+					background : #31dac3;
+					color : #fff;
+				}
+			}
+		}
+		.bg{
+			position : fixed;
+			top : 0;
+			width : 100%;
+			height : 100%;
+			z-index : -1;
+			transition : background-color 0.4s;
+			-webkit-transition : background-color 0.4s;
+			&.bganimate{
+				z-index : 21;
+				background-color : rgba(0 ,0 ,0 ,0.5);
+			}
+		}
+		.zhuanyeul2{
+			position : fixed;
+			top : pxToRem(64px);
+			right : 0;
+			width : pxToRem(188px);
+			background : #fff;
+			z-index : 21;
+			overflow-y : scroll;
+			height : calc(100vh - 3.2rem);
+
+			&>li{
+				width : 100%;
+				line-height : pxToRem(50px);
+				text-align : center;
+				background : #fff;
+				color : #1d1d1d;
+				font-size : pxToRem(14px);
+
+				&.active{
+					background : #31dac3;
+					color : #fff;
+				}
+			}
+		}
+	}
+}
+
+.zhuanyeAnimate-enter {
+	position: absolute;
+    transform: translate3d(100%,0,0);
+    transition: transform 0.4s ;
+}
+.zhuanyeAnimate-enter.zhuanyeAnimate-enter-active {
+    transform: translate3d(0,0,0);
+}
+.zhuanyeAnimate-leave {
+	position: absolute;
+    transform: translate3d(0,0,0);
+    transition: transform 0.4s ;
+}
+.zhuanyeAnimate-leave.zhuanyeAnimate-leave-active {
+    transform: translate3d(100%,0,0);
+}

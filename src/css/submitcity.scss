@@ -1,0 +1,100 @@
+@import "~css/common";
+
+.submitcity{
+	position : fixed;
+	left : 0;
+	right : 0;
+	top : 0;
+	bottom : 0;
+	z-index : 80;
+	background : rgba(0,0,0,.4);
+
+	.content{
+		position : absolute;
+		left : 50%;
+		top : 50%; 
+		transform : translate(-50%,-50%);
+		background : #fff;
+		width : pxToRem(295px);
+		height : pxToRem(260px);
+		border-radius : 10px;
+		
+		img{
+			position : absolute;
+			top : pxToRem(-30px);
+			left : pxToRem(120px);
+			width : pxToRem(60px);
+			height : pxToRem(60px);
+		}
+		.cityheight{
+			overflow : hidden;
+			height : pxToRem(150px);
+		
+			ul{
+				overflow-y : scroll;
+				display : -webkit-flex;
+				display : flex;
+				flex-direction : row;
+				flex-wrap : wrap;
+				justify-content : flex-start;
+				align-items : flex-start;
+				align-content : flex-start;
+				height : pxToRem(115px);
+				margin-top : pxToRem(18px);
+
+				li{
+					width : 33.333%;
+					display : inline-block;
+					padding : 0 pxToRem(10px);
+					margin-bottom : pxToRem(10px);
+					span{
+						display : block;
+						border : pxToRem(0.5px) solid #c7c7cc;
+						line-height : pxToRem(30px);
+						border-radius : 8px;
+						color : #8c8c8c;
+						text-align : center;
+					}
+					&.on{
+						span{
+							border : 0;
+							color : #fff;
+							background : #31dac3;
+						}
+					}
+				}
+			}
+		}
+		p{
+			overflow : hidden;
+			em{
+				display : block;
+				margin-top : pxToRem(46px);
+				font-weight : 500;
+				font-size : pxToRem(16px);
+				text-align : center;
+				color : #1d1d1d;
+			}
+			span{
+				display : inline-block;
+				width : 50%;
+				line-height : pxToRem(45px);
+				font-size : pxToRem(14px);
+				text-align : center;
+				background : #31dac3;
+				color : #fff;
+				border-bottom-right-radius : 10px;
+
+				&:nth-child(1){
+					color : #8c8c8c;
+					background : #f8f8f8;
+					border-bottom-left-radius : 10px;
+					border-bottom-right-radius : 0;
+				}
+				&.no{
+					background : #8C8C8C;
+				}
+			}
+		}
+	}
+}

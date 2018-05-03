@@ -1,0 +1,149 @@
+@import "~css/common";
+.requirement{
+	position : fixed;
+	top : pxToRem(64px);
+	left : 0;
+	width : 100%;
+	line-height : pxToRem(44px);
+	background : #fff;
+	z-index : 99;
+	border-bottom : 1px solid #f0f0f0;
+
+	b{
+		display : inline-block;
+		width : 25%;
+		text-align : center;
+
+		&.requselected{
+			span{
+				color : #31dac3;
+			}
+		}
+		span{
+			display : block;
+			line-height : pxToRem(20px);
+			color : #6c6c6c;
+		}
+		&:last-child{
+			border-right : 0;
+		}
+		i.b{
+			position : relative;
+			top : 1px;
+			margin-left : pxToRem(5px);
+			background-position : pxToRem(-68px) 0;
+			width : pxToRem(7px);
+			height : pxToRem(10px);
+
+			&.down{
+				background-position : pxToRem(-92px) 0;
+			}
+			&.on{
+				background-position : pxToRem(-80px) 0;
+			}
+		}
+	}
+	.bdposition{
+		&.show{
+			position : absolute;
+			top : pxToRem(45px);
+			left :0;
+			right : 0;
+			bottom : 0;
+			z-index : 99;
+			background-color : rgba(0, 0, 0, 0.5);
+		}
+	}
+	.bd{
+		overflow : hidden;
+		width : 100%;
+		display : none;
+		transition: opacity 0.2s;
+		-webkit-transition: opacity 0.2s;
+		opacity :0;
+		background : #fff;
+		height : pxToRem(450px);
+
+		em{
+			display : block;
+			line-height : pxToRem(25px);
+			color : #a5aab2;
+			background : #f9f9f9;
+			padding-left : pxToRem(14px);
+			margin-bottom : pxToRem(14px);
+		}
+		.bigscroll{
+			overflow-y : scroll;
+			height : pxToRem(410px);
+		}
+		ul{
+			overflow-y : scroll;
+			padding : 0 pxToRem(9px);
+			display : flex;
+			display : -webkit-flex;
+			flex-direction : row;
+			flex-wrap : wrap;
+			justify-content : flex-start;
+			align-items : flex-start;
+			align-content : flex-start;
+			
+			&.xueli{
+				height : pxToRem(371.5px);
+			}
+			
+
+			li{
+				width : 25%;
+				padding : 0 5px;
+				margin-bottom : pxToRem(14px);
+				p{
+					overflow : hidden;
+					background : #fff;
+					text-align : center;
+					white-space : nowrap;
+					text-overflow : ellipsis;
+					border : pxToRem(0.5px) solid #e9e9e9;
+					color : #8c8c8c;
+					font-size : pxToRem(14px);
+					padding : 0 pxToRem(2px);
+					line-height : pxToRem(29px);
+					border-radius : 5px;
+				}
+				&.on{
+					p{
+						border : 0;
+						color : #fff;
+						background : #31dac3;
+					}
+				}
+			}
+		}
+    	&.active{
+    		opacity : 1;
+    		display : block;
+    		max-height : pxToRem(450px);
+    	}
+    	p{
+    		overflow : hidden;
+	    	span{
+	    		float : left;
+	    		display : inline;
+	    		font-size : pxToRem(16px);
+	    		line-height : pxToRem(40px);
+	    		background : #fff;
+	    		width : 50%;
+	    		color : #fff;
+	    		text-align : center;
+
+	    		&.reset{
+	    			background : #f9f9f9;
+	    			color : #8c8c8c;
+	    		}
+	    		&.confirm{
+	    			background : #31dac3;
+	    			color : #fff;
+	    		}
+	    	}
+    	}
+	}
+}

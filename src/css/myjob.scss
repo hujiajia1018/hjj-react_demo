@@ -1,0 +1,140 @@
+@import "~css/common";
+$color : #1d1d1d;
+$bg : #31dac3;
+$bordercolor : #979797;
+$bordercolor2 : #b6b6b6;
+#modify{
+	.hd{
+		display : block;
+	}
+}
+.myjob{
+	position : absolute;
+	top : 0;
+	bottom : 0;
+	left : 0;
+	right : 0;
+	background : #fff;
+	z-index : 17;
+	min-height : 100vh;
+	
+	&>.hd{
+		display : -webkit-flex;
+		display : flex;
+		flex-direction : row;
+		flex-wrap : nowrap;
+		justify-content : space-around;
+		align-items : center;
+		height : pxToRem(64px);
+		font-size : pxToRem(17px);
+		color : #fff;
+		background-image : linear-gradient(45deg,#00D7CC,#2FE9BB);
+		padding : pxToRem(20px) pxToRem(14px) 0 pxToRem(14px);
+
+		span{
+			flex : 1;
+			text-align : center;
+			font-size : pxToRem(18px);
+		}
+		em{
+			flex : 1;
+			font-size : pxToRem(14px);
+			i{
+				position : relative;
+				top : 2px;
+				margin-right : pxToRem(3px);
+				background-position : pxToRem(-104.5px) pxToRem(-14.5px);
+				width : pxToRem(10px);
+				height : pxToRem(18px);
+			}
+		}
+	}
+	.box{
+		width : 96%;
+		margin : 0 auto;
+
+		ul.myjoblist{
+			li{
+				display : -webkit-flex;
+				display : flex;
+				flex-direction : row;
+				flex-wrap : nowrap;
+				justify-content : space-between;
+				align-items : center;
+				width : 100%;
+				height : pxToRem(52px);
+				border-bottom : 1px solid #f0f0f0;
+				padding : 0 pxToRem(10px);
+				font-size : pxToRem(14px);
+				
+				span{
+					color : $color;
+					flex : 2.2;
+				}
+				em{
+					display : inline-block;
+					overflow : hidden;
+					flex : 7.4;
+					white-space : nowrap;
+					text-overflow : ellipsis;
+					-webkit-line-clamp : 2;
+					-webkit-box-orient : vertical;
+					padding-right : pxToRem(8px);
+					text-align : right;
+					color : $bg;
+				}
+				i.icon{
+					flex : 0.3;
+					background-position : pxToRem(-32.5px) pxToRem(-56px);
+					width : pxToRem(8px);
+					height : pxToRem(12px);
+				}
+			}
+		}
+	}
+	p.complete{
+		position : absolute;
+		bottom : pxToRem(10px);
+		left : 2.5%;
+		width : 95%;
+		height : pxToRem(40px);
+		line-height : pxToRem(40px);
+		font-size : pxToRem(16px);
+		background : #31dac3;
+		border-radius : 10px;
+		box-shadow : 0 0 2px 0;
+		color : #ffffff;
+		text-align : center;
+	}
+}
+.jobAnimate-enter {
+	position: absolute;
+    transform: translate3d(100%,0,0);
+    transition: transform 0.4s ;
+}
+.jobAnimate-enter.jobAnimate-enter-active {
+    transform: translate3d(0,0,0);
+}
+.jobAnimate-leave {
+	position: absolute;
+    transform: translate3d(0,0,0);
+    transition: transform 0.4s ;
+}
+.jobAnimate-leave.jobAnimate-leave-active {
+    transform: translate3d(100%,0,0);
+}
+
+.moneyAnimate-enter {
+    transition: opacity 0.4s ;
+    opacity : 0;
+}
+.moneyAnimate-enter.moneyAnimate-enter-active {
+    opacity : 1;
+}
+.moneyAnimate-leave {
+	opacity : 1;
+    transition: opacity 0.4s ;
+}
+.moneyAnimate-leave.moneyAnimate-leave-active {
+    opacity : 0;
+}

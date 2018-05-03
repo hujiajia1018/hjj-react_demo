@@ -1,0 +1,122 @@
+@import "~css/common";
+
+.ratelistbor{
+	min-width : 100%;
+	background : #fff;
+	padding : pxToRem(25px) 0;
+}
+.ratelist{
+	margin : 0 auto;
+	transform : translate3d(0,0,0);
+	-webkit-transform : translate3d(0,0,0);
+
+	li{
+		float : left;
+		display : inline;
+		width : 115px;
+		text-align : center;
+		span{
+			display : block;
+			color : #8c8c8c;
+			height : pxToRem(15px);
+		}
+		&.contright{
+			text-align : right;
+		}
+		.textcolor{
+			color : #31dac3;
+		}
+		p{
+			position : relative;
+			margin : pxToRem(10px) 0 pxToRem(4px) 0;
+			i{
+				position : relative;
+				z-index : 2;
+				background-position : 0 pxToRem(-286px);
+				width : pxToRem(36px);
+				height : pxToRem(36px);
+				background-color : #fff;
+
+				&.done{
+					background-position : pxToRem(-52px) pxToRem(-339px);
+				}
+				&.s0{
+					background-position : 0 pxToRem(-252px);
+				}
+				&.s0on{
+					background-position : pxToRem(-118px) pxToRem(-252px);
+				}
+				&.s{
+					background-position : pxToRem(-76px) pxToRem(-252px);
+				}
+				&.jbs{
+					background-position : 0 pxToRem(-296px);
+					/*height : pxToRem(34px);
+					width : pxToRem(35px);*/
+				}
+				&.jms{
+					background-position : pxToRem(-44px) pxToRem(-296px);
+					/*width : pxToRem(37px);
+					height : pxToRem(29.5px);*/
+				}
+				&.jiely{
+					background-position : pxToRem(-128px) pxToRem(-296px);
+					/*height : pxToRem(33px);
+					width : pxToRem(31px);*/
+				}
+				&.july{
+					background-position : pxToRem(-88px) pxToRem(-296px);
+					/*height : pxToRem(33px);
+					width : pxToRem(31px);*/
+				}
+				&.wms{
+					background-position : pxToRem(-160px) pxToRem(-252px);
+					/*height : pxToRem(31px);
+					width : pxToRem(39px);*/
+				}
+				&.wbs{
+					background-position : pxToRem(-208px) pxToRem(-252px);
+					/*height : pxToRem(36px);
+					width : pxToRem(36px);*/
+				}
+				&.wbson{
+					background-position : pxToRem(-214px) pxToRem(-296px);
+				}
+				&.wmson{
+					background-position : pxToRem(-167px) pxToRem(-296px);
+				}
+			}
+			label{
+				position : absolute;
+				top : pxToRem(9px);
+				left : 0;
+				z-index : 1;
+				width : 100%;
+				display : block;
+				height : pxToRem(2px);
+				line-height : pxToRem(2px);
+				color : #d8d8d8;
+
+				&.left{
+					width : 50%;
+					left : 0;
+					text-align : left;
+					padding-left : pxToRem(10px);
+				}
+				&.right{
+					width : 50%;
+					left : auto;
+					right : 0;
+					text-align : right;
+					padding-right : pxToRem(10px);
+				}
+			}
+		}
+		em{
+			display : block;
+			color : #a5aab2;
+			font-size : pxToRem(12px);
+			height : pxToRem(17px);
+		}
+	}
+}

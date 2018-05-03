@@ -1,0 +1,501 @@
+@import "~css/common";
+
+.companydetailbor{
+	.tip_type{
+		top : 45%;
+	}
+	.erroshow{
+		.tip{
+			top : pxToRem(64px);
+		}
+	}
+	.hdcomdetail{
+		position : fixed;
+		top : 0;
+		left : 0;
+		width : 100%;
+		background-image : linear-gradient(45deg,#00D7CC,#2FE9BB);
+		z-index : 80;
+		display : -webkit-flex;
+		display : flex;
+		flex-direction : row;
+		flex-wrap : nowrap;
+		justify-content : space-around;
+		align-items : center;
+		height : pxToRem(64px);
+		padding-top : pxToRem(20px);
+		font-size : pxToRem(17px);
+
+		span{
+			flex : 1;
+			text-align : center;
+			color : #fff;
+			font-size : pxToRem(18px);
+
+			&:last-child{
+				text-align : right;
+			}
+		}
+		em{
+			position : relative;
+			z-index : 99;
+			margin-left : pxToRem(14px);
+			flex : 1;
+			font-size : pxToRem(14px);
+			i{
+				position : relative;
+				top : 2px;
+				margin-right : pxToRem(3px);
+				background-position : pxToRem(-104.5px) pxToRem(-14.5px);
+				width : pxToRem(10px);
+				height : pxToRem(18px);
+			}
+		}
+	}
+}
+.companydetail{
+	overflow : hidden;
+	width : 100%;
+	background : #f4f4f4;
+	min-height : 100vh;
+
+	.banner{
+		position : relative;
+		width : 100%;
+		min-height : pxToRem(232px);
+
+		>.hd{
+			position : fixed;
+			left : 0;
+			top : 0;
+			z-index : 80;
+			width : 100%;
+			display : flex;
+			display : -webkit-flex;
+			height : pxToRem(64px);
+			flex-direction : row;
+			flex-wrap : nowrap;
+			justify-content : space-around;
+			align-items : center;
+			color : #4f4f4f;
+			padding : pxToRem(20px) pxToRem(14px) 0 pxToRem(14px);
+			background-image : linear-gradient(45deg,#00D7CC,#2FE9BB);
+
+			span{
+				flex : 1;
+				font-size : pxToRem(14px);
+
+				&:nth-child(2){
+					flex : 1;
+					overflow : hidden;
+					white-space : nowrap;
+					text-overflow : ellipsis;
+					text-align : center;
+					font-size : pxToRem(18px);
+					color : #fff;
+				}
+				&:nth-child(3){
+					flex : 1;
+					text-align : right;
+					color : #a5aab2;
+					font-size : pxToRem(16px);
+				}
+			}
+		}
+
+		.slick-dots{
+			bottom : 0;
+		}
+		i.back{
+			background-position : pxToRem(-104.5px) pxToRem(-14.5px);
+			width : pxToRem(15px);
+			height : pxToRem(23px);
+		}
+		i.sharebtn{
+			background-position : pxToRem(-184px) 0;
+			width : pxToRem(26px);
+			height : pxToRem(24px);
+		}
+		i.like{
+			background-position : pxToRem(-156px) 0;
+			width : pxToRem(26px);
+			height : pxToRem(24px);
+			margin-right : pxToRem(10px);
+			&.liked{
+				background-position : pxToRem(-128px) 0;
+			}
+		}
+
+		&>img{
+			width : 100%;
+		}
+	}
+	.info{
+		position : absolute;
+		background : #fff;
+		top : pxToRem(140px);
+		width : 95%;
+		left : 2.5%;
+		border-top-left-radius : 10px;
+		border-top-right-radius : 10px;
+		box-shadow : 0 2px 4px 0 rgba(169,169,169,0.20);
+		
+		.comlogo{
+			position : absolute;
+			top : pxToRem(-35px);
+			left : 50%;
+			margin-left : pxToRem(-35px);
+			width : pxToRem(70px);
+			height : pxToRem(70px);
+			padding : pxToRem(2px);
+			border-radius : 5px;
+			background : #fff;
+			box-shadow : 0 2px 4px 0 rgba(140, 140, 140, 0.2);
+
+			img{
+				border-radius : 5px;
+				width : 100%;
+				height : 100%;
+			}
+		}
+		.detail{
+			text-align : center;
+			margin-top : pxToRem(55px);
+
+			h1{
+				font-size : pxToRem(16px);
+				color : #1d1d1d;
+				font-weight : bold;
+				margin-bottom : pxToRem(8px);
+			}
+			p{
+				font-size : pxToRem(13px);
+				color : #a5aab2;
+				b{
+					display : block;
+					margin-bottom : pxToRem(6px);
+					em{
+						margin-right : pxToRem(6px);
+						padding-left : pxToRem(9px);
+						border-left : 1px solid #8c8c8c;
+						color : #8c8c8c;
+					}
+					:nth-child(1){
+						border-left : 0;
+					}
+				}
+				&.bgshow{
+					padding-top : pxToRem(20px);
+					margin-bottom : pxToRem(10px);
+					background : url(../images/icon20.png) no-repeat center 0;
+				}
+			}
+			a.linkdirs{
+				display : inline-block;
+				color : #8c8c8c;
+				font-size : pxToRem(14px);
+			}
+		}
+		ul.tablist{
+			position : relative;
+			top : pxToRem(1px);
+			border-top : 1px solid #f0f0f0;
+			text-align : center;
+
+			li{
+				width : 25%;
+				display : inline-block;
+				font-size : pxToRem(14px);
+				line-height : pxToRem(40px);
+				text-align : center;
+				color : #757575;
+				border-bottom : 1px solid transparent;
+
+				&.on{
+					color : #31dac3;
+					border-bottom : 1px solid #31dac3;
+				}
+			}
+		}
+	}
+	.box{
+		width : 95%;
+		margin : pxToRem(145px) auto 0 auto;
+
+		.tab{
+			overflow : hidden;
+			position : static;
+			width : 100%;
+			background : #fff;
+
+			.property{
+				border-bottom : 1px solid #f4f4f4;
+				width : 100%;
+
+				&.fixedtop{
+					position : fixed;
+					top : pxToRem(64px);
+					left : 2.5%;
+					z-index : 1;
+					width : 95%;
+				}
+				.datatype{
+					text-align : center;
+					display : block;
+					width : 100%;
+					height : pxToRem(55px);
+				}
+				ul{
+					overflow-y : scroll;
+					padding : 0;
+					margin : 0;
+					li{
+						padding : 0 pxToRem(5px);
+						line-height : pxToRem(29px);
+					}
+					&.a{
+						height : pxToRem(44px);
+					}
+					&.b{
+						height : pxToRem(90px);
+					}
+				}
+			}
+			
+		}
+		.ulbd{
+			position : relative;
+			.tip_type{
+				top : 45%;
+			}
+			p{
+				overflow : hidden;
+			}
+			.botbg{
+				background : #f8f8f8;
+				width : 100%;
+				border-radius : pxToRem(55px);
+				height : pxToRem(10px);
+			}
+			.companymsgdetail{
+				background : #fff;
+				padding : pxToRem(10px) pxToRem(10px);
+				word-wrap : break-word;
+				box-shadow : 0 2px 4px 0 rgba(169,169,169,0.2);
+				color : #8c8c8c;
+				
+				.msdetail{
+					position : relative;
+					
+					&.nomsg{
+						min-height : pxToRem(150px);
+					}
+					.infoall{
+						position : absolute;
+						bottom : 0;
+						left : 0;
+						background-image : linear-gradient(180deg,hsla(0,0%,100%,.3),#fff);
+						width : 100%;
+						height : 100%;
+					}
+				}
+				div.btn{
+					text-align : center;
+					i{
+						margin : 0 auto;
+						background-position : 0 pxToRem(-56px);
+						width : pxToRem(18px);
+						height : pxToRem(10px);
+						&.on{
+							background-position : pxToRem(-22px) pxToRem(-56px);
+						}
+					}
+				}
+			}
+			.a{
+				display : none;
+				position : relative;
+				background : #fff;
+
+				.tip_type{
+					top : 47%;
+				}
+				&.show{
+					display : block;
+				}
+				ul{
+					width : 100%;
+					min-height : pxToRem(250px);
+					li{
+						width : 100%;
+						padding : pxToRem(10px) pxToRem(10px) 0 pxToRem(10px);
+						p{
+							margin-bottom : pxToRem(10px);
+							overflow : hidden;
+							color : #8c8c8c;
+
+							i{
+								position : relative;
+								top : pxToRem(2px);
+								background-position : pxToRem(-19px) pxToRem(-35.5px);
+								width : pxToRem(15px);
+								height : pxToRem(16px);
+								margin-right : pxToRem(5px);
+							}
+							span{
+								color : #8c8c8c;
+								display : inline-block;
+								font-size : pxToRem(14px);
+								&.renshu{
+									margin-left : pxToRem(20px);
+								}
+							}
+							&.spec{
+								display : flex;
+								display : -webkit-flex;
+								flex-direction : row;
+								flex-wrap : nowrap;
+								justify-content : space-around;
+								align-items : center;
+								span{
+									&:nth-child(1){
+										text-align : left;
+										flex : 3;
+										overflow : hidden;
+										text-overflow : ellipsis;
+										white-space : nowrap;
+									}
+									&:nth-child(2){
+										text-align : right;
+										flex : 1;
+									}
+									&.red{
+										color : #ff4b4b;
+										font-size : pxToRem(16px);
+									}
+									&.posname{
+										color : #393939;
+										font-size : pxToRem(16px);
+									}
+								}
+							}
+							&:nth-child(2){
+								span{
+									&:nth-child(2){
+										border-left : 1px solid #8c8c8c;
+										margin-left : 10px;
+										padding-left : 10px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			.c{
+				display : none;
+				&.show{
+					display : block;
+				}
+				.tip_type{
+					top : 50%;
+				}
+				.companyimg{
+					margin-top : pxToRem(10px);
+					background : #fff;
+					box-shadow : 0 2px 4px 0 rgba(169,169,169,0.53);
+					.title{
+						text-align : center;
+						font-size : pxToRem(14px);
+						color : #8c8c8c;
+						line-height : pxToRem(36px);
+						border-bottom : 1px solid #f8f8f8;
+					}
+					p{
+						padding : 0 pxToRem(10px) pxToRem(10px) pxToRem(10px);
+						img{
+							width : 100%;
+							height : auto;
+							margin-top : pxToRem(10px);
+						}
+					}
+				}
+			}
+			.b{
+				background : #fff;
+				display : none;
+				min-height : pxToRem(150px);
+				.tip_type{
+					top : 50%;
+				}
+				.talklist{
+					position : relative;
+					padding : 0 pxToRem(10px);
+					em{
+						position : absolute;
+						bottom : pxToRem(18px);
+						right : pxToRem(10px);
+						color : #8c8c8c;
+
+						i{
+							display : block;
+							margin : 0 auto pxToRem(4px) auto;
+							background-position : pxToRem(-203.5px) pxToRem(-24px);
+							width : pxToRem(21px);
+							height : pxToRem(18px);
+						}
+						&.green{
+							i{
+								background-position : pxToRem(-229px) pxToRem(-24px);
+								width : pxToRem(22px);
+								height : pxToRem(21px);
+							}
+						}
+					}
+					p{
+						overflow : hidden;
+						font-size : pxToRem(14px);
+						color : #8c8c8c;
+						margin-bottom : pxToRem(6px);
+
+						&.name{
+							color : #1d1d1d;
+							line-height : pxToRem(45px);
+							font-size : pxToRem(16px);
+							margin-bottom : 0;
+						}
+						span{
+							float : left;
+						}
+						i{
+							position : relative;
+							top : 3px;
+							margin-right : pxToRem(9px);
+							&.sj{
+								background-position : pxToRem(-40px) pxToRem(-36px);
+								width : pxToRem(16px);
+								height : pxToRem(16px);
+							}
+							&.dd{
+								background-position : pxToRem(-62px) pxToRem(-36px);
+								width : pxToRem(14px);
+								height : pxToRem(17px);
+							}
+							&.xs{
+								background-position : pxToRem(-82px) pxToRem(-36px);
+								width : pxToRem(16px);
+								height : pxToRem(14.5px);
+							}
+						}
+					}
+					.botbg{
+						margin-top : pxToRem(12px);
+					}
+				}
+				&.show{
+					display : block;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,61 @@
+*{margin:0;padding:0;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-text-size-adjust:100%;-webkit-user-select:none;font-weight:normal;font-style:normal;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-text-size-adjust: 100%;-ms-user-select:none;user-select:none;-webkit-overflow-scrolling:touch;cursor:pointer;}
+html{font:20px/1.25 PingFangSC-Regular,'微软雅黑',Arial,sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+body,p,form,input,button,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6{margin:0;padding:0;overflow-x:hidden;}
+body{margin:0 auto;width:100%;font-size:0.7rem;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+input,textarea,select{-webkit-user-select:text;-ms-user-select:text;user-select:text;-webkit-appearance:none;}
+textarea{resize:none;}
+table{border-collapse:collapse;}
+input,select,textarea{outline:none;border:none;background:none;font-size:0.7rem;font-family:"微软雅黑"}
+a{text-decoration:none;-WebKit-touch-callout:none;outline:0;cursor:pointer;color:#666;}
+em,i{font-style:normal;}
+li,ol{list-style:none;}
+img{border:none;width:100%;vertical-align:top;}
+::-webkit-scrollbar{width: 0;height: 0;}
+::-webkit-search-cancel-button{display: none;}
+::-webkit-scrollbar-track {background-color: transparent;} 
+::-webkit-scrollbar-thumb {background-color: transparent;}
+::-webkit-scrollbar-button {background-color: transparent;} 
+::-webkit-scrollbar-corner {background-color: transparent;}
+.icon{display:inline-block;background:url(../images/icon.png) no-repeat;background-size:5rem 22.5rem;}
+.icon2{display:inline-block;background:url(../images/icon2.png) no-repeat;background-size:12.85rem 15.5rem;}
+.icon3{display:inline-block;background:url(../images/icon18.png) no-repeat;background-size:12.5rem 23.75rem;}
+.icon4{display:inline-block;background:url(../images/icon38.png) no-repeat;background-size:7.35rem 3.75rem;}
+.icon5{display:inline-block;background:url(../images/icon39.png) no-repeat;background-size:3.3rem 5rem;}
+.icon6{display:inline-block;background:url(../images/icon45.png) no-repeat;background-size:5rem 1.1rem;}
+
+.noscoll{height:100%;overflow:hidden;position: relative;}
+
+.tip{position:absolute;left:0;right:0;top:0;bottom:0;z-index:98;background:transparent;}
+.fixedmode{position:fixed;}
+.tip .tipcontent{position: absolute; left:50%; top:50%; -webkit-transform:translate(-50%,-50%); transform:translate(-50%,-50%);padding:.7rem;width:10rem;text-align:center;background:rgba(79,79,79,.9);border-radius:1.2rem;letter-spacing:0.8px;overflow:hidden;transition:opacity 0.4s;color:#fff;opacity:0;}
+.tip .tipcontent.show{opacity : 1;}
+
+.tip .tip_type{position:absolute;left:50%;top:32%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);text-align:center;color:#b2b6bd;font-size:14px;}
+.tip .tip_type img{width:75px;height:75px;}
+.tip .tip_type i.nodata{background-position:0 -10.55rem;width:12.85rem;height:4.95rem;}
+.tip .tip_type .tiperro{background-position:0 0;width:12.85rem;height:10.1rem;}
+.tip .tip_type p{overflow:hidden;}
+.tipshowend{width:100%;color:#a5aab2;}
+.tipshowend .tip_type{text-align:center;height:30px;line-height:30px;}
+.tipshowend .tip_type p,#tipshowend .tip_type i{display : inline-block;}
+.tipshowend img{display:inline-block;width:22px;height:auto;margin:4px 10px 0 0;}
+div.clearbox{clear:both;}
+
+@media screen and (min-width: 320px) {html{font-size:106.6666%;}}
+@media screen and (min-width: 360px) {html{font-size:120%;}}
+@media screen and (min-width: 375px) {html{font-size:125%;}}
+@media screen and (min-width: 400px) {html{font-size:133.3333%;}}
+@media screen and (min-width: 414px) {html{font-size:138%;}}
+@media screen and (min-width: 440px) {html{font-size:146.6666%;}}
+@media screen and (min-width: 480px) {html{font-size:160%;}}
+@media screen and (min-width: 520px) {html{font-size:173.3333%;}}
+@media screen and (min-width: 560px) {html{font-size:186.6666%;}}
+@media screen and (min-width: 600px) {html{font-size:200%;}}
+@media screen and (min-width: 640px) {html{font-size:213.3333%;}}
+@media screen and (min-width: 680px) {html{font-size:226.6666%;}}
+@media screen and (min-width: 720px) {html{font-size:240%;}}
+@media screen and (min-width: 760px) {html{font-size:253.3333%;}}
+@media screen and (min-width: 800px) {html{font-size:266.6666%;}}
+@media screen and (min-width: 1200px) {html{font-size:400%;}}
+@media screen and (min-width: 1280px) {html{font-size:426.6666%;}}

@@ -1,0 +1,204 @@
+@import "~css/common";
+
+.resumepreview{
+	min-height : 100vh;
+	background : #f8f8f8;
+	.tip_type{
+		top : 42%;
+	}
+	p{
+		overflow : hidden;
+	}
+	.hd{
+		overflow : hidden;
+		height : pxToRem(300px);
+		background-image : linear-gradient(45deg,#00D7CC,#2FE9BB);
+		.imgbor{
+			position : relative;
+			margin : pxToRem(20px) auto 0 auto;
+			width : pxToRem(263px);
+			height : pxToRem(264px);
+			background : url(../images/icon28.png) no-repeat;
+			background-size : pxToRem(263px) pxToRem(264px);
+			img{
+				position : absolute;
+				top : pxToRem(110px);
+				left : pxToRem(25px);
+				width : pxToRem(70px);
+				height : auto;
+			}
+			p{
+				position : absolute;
+				top : pxToRem(110px);
+				right : pxToRem(45px);
+				width : pxToRem(110px);
+				font-size : pxToRem(16px);
+				color : #000;
+				word-wrap : break-word;
+
+				b{
+					display : block;
+					font-size : pxToRem(16px);
+					color : #1d1d1d;
+					margin-bottom : pxToRem(18px);
+				}
+				span{
+					overflow : hidden;
+					display : block;
+					font-size : 12px;
+					color : #8c8c8c;
+					margin-bottom : pxToRem(5px);
+					&.x{
+						white-space : nowrap;
+						text-overflow : ellipsis;
+					}
+				}
+			}
+		}
+		i{
+			position : absolute;
+			left : pxToRem(12px);
+			top : pxToRem(34px);
+			background-position : pxToRem(-104.5px) pxToRem(-14.5px);
+			width : pxToRem(10px);
+			height : pxToRem(18px);
+		}
+	}
+	.box{
+		margin-top : pxToRem(10px);
+		background : #fff;
+		.title{
+			font-size : pxToRem(16px);
+			color : #fff;
+			line-height : pxToRem(46px);
+			background : #31dac3;
+			i{
+				position : relative;
+				top : pxToRem(7px);
+				margin : 0 pxToRem(10px) 0 pxToRem(15px);
+				&.a{
+					background-position : pxToRem(-156px) pxToRem(-116px);
+					width : pxToRem(26px);
+					height : pxToRem(26px);
+				}
+				&.b{
+					background-position : pxToRem(-156px) pxToRem(-146.5px);
+					width : pxToRem(26px);
+					height : pxToRem(26px);
+				}
+				&.c{
+					background-position : pxToRem(-224px) pxToRem(-116px);
+					width : pxToRem(26px);
+					height : pxToRem(26px);
+				}
+				&.d{
+					background-position : pxToRem(-190px) pxToRem(-116px);
+					width : pxToRem(26px);
+					height : pxToRem(26px);
+				}
+				&.e{
+					background-position : pxToRem(-190px) pxToRem(-146.5px);
+					width : pxToRem(26px);
+					height : pxToRem(26px);
+				}
+				&.f{
+					background-position : pxToRem(-190px) pxToRem(-176px);
+					width : pxToRem(26px);
+					height : pxToRem(26px);
+				}
+				&.g{
+					background-position : pxToRem(-156px) pxToRem(-176px);
+					width : pxToRem(26px);
+					height : pxToRem(26px);
+				}
+				&.h{
+					background-position : pxToRem(-224px) pxToRem(-146.5px);
+					width : pxToRem(26px);
+					height : pxToRem(26px);
+				}
+			}
+			&.marbot{
+				margin-bottom : pxToRem(24px);
+			}
+		}
+		.boxbd{
+			overflow : hidden;
+			padding : pxToRem(15px);
+			color : #8c8c8c;
+			p.nomsg{
+				text-align : center;
+				padding-bottom : pxToRem(10px);
+				color : #c6cacf;
+			}
+			p.other{
+				margin-bottom : pxToRem(10px);
+				color : #8c8c8c;
+				font-size : pxToRem(14px);
+
+				span{
+					overflow : hidden;
+					float : right;
+					display : inline;
+					color : #be2a1f;
+					font-size : pxToRem(16px);
+				}
+			}
+			&.borbot{
+				padding : pxToRem(15px) pxToRem(15px) 0 pxToRem(15px);
+				&:last-child{
+					padding-bottom : 0;
+					div{
+						border-bottom : 0;
+					}
+				}
+				div{
+					p:nth-child(1){
+						font-size : pxToRem(16px);
+						color : #1d1d1d;
+						span{
+							color : #ff4b4b;
+						}
+					}
+					p:nth-child(2){
+						margin-bottom : pxToRem(15px);
+					}
+					border-bottom : 1px dashed #979797;
+					p.unline{
+						color : #8c8c8c;
+					}
+				}
+			}
+		}
+	}
+	.timebox{
+		border-left : pxToRem(0.5px) solid #cbcbd0;
+		margin : 0 pxToRem(15px);
+		&.nobor{
+			border-left : 0;
+		}
+		.timehd{
+			position : relative;
+			top : pxToRem(-8px);
+			left : pxToRem(-4px);
+			color : #fff;
+			padding-left : pxToRem(14px);
+			line-height : pxToRem(23px);
+			font-size : pxToRem(13px);
+			background : url(../images/icon3.png) no-repeat;
+			background-size : pxToRem(181px) pxToRem(23px);
+		}
+		.timebd{
+			padding : pxToRem(10px) pxToRem(15px) pxToRem(15px) pxToRem(20px);
+			p{
+				overflow : hidden;
+				color : #8c8c8c;
+				margin-bottom : pxToRem(5px);
+				&:nth-child(1){
+					margin-bottom : pxToRem(7px);
+					font-size : pxToRem(16px);
+					color : #1d1d1d;
+				}
+			}
+		}
+	}
+}

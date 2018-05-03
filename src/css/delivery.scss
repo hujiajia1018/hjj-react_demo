@@ -1,0 +1,283 @@
+@import "~css/common";
+
+#modedata{
+	background : #fff;
+}
+.delivery{
+	overflow : hidden;
+	background : #f8f8f8;
+	min-height : 100vh;
+
+	.tip{
+		top : pxToRem(105px);
+	}
+	&>.hd{
+		position : fixed;
+		z-index : 80;
+		width : 100%;
+		display : flex;
+		display : -webkit-flex;
+		height : pxToRem(64px);
+		flex-direction : row;
+		flex-wrap : nowrap;
+		justify-content : space-around;
+		align-items : center;
+		color : #4f4f4f;
+		padding : pxToRem(20px) pxToRem(14px) 0 pxToRem(14px);
+		background-image : linear-gradient(45deg,#00D7CC,#2FE9BB);
+
+		span{
+			flex : 1;
+			font-size : pxToRem(14px);
+			a{
+				display : block;
+			}
+			i{
+				position : relative;
+				top : 1px;
+				margin-right : pxToRem(3px);
+				background-position : pxToRem(-101.5px) pxToRem(-12px);
+				width : pxToRem(15px);
+				height : pxToRem(23px);
+			}
+			&:nth-child(2){
+				flex : 1;
+				text-align : center;
+				font-size : pxToRem(18px);
+				color : #fff;
+			}
+			&:nth-child(3){
+				flex : 1;
+				text-align : right;
+				color : #a5aab2;
+				font-size : pxToRem(16px);
+			}
+		}
+	}
+	.bd{
+		ul.poslist{
+			margin-top : pxToRem(74px);
+			width : 100%;
+			padding : 0 pxToRem(10px) pxToRem(30px) pxToRem(10px);
+			min-height : 50vh;
+			background : #f8f8f8;
+
+			&.deliverylist{
+				margin-top : 0;
+				position : absolute;
+				left : 0;
+				top : pxToRem(74px);
+			}
+			&.modepage{
+				margin-top : pxToRem(64px);
+				min-height : initial;
+				background : #fff;
+				padding : 0;
+				li{
+					padding-bottom : pxToRem(15px);
+					margin : 0 pxToRem(15px);
+					border-bottom : pxToRem(0.5px) solid #d8d8d8;
+				}
+			}
+			li{
+				overflow : initial;
+				position : relative;
+				margin-bottom : pxToRem(10px);
+				label{
+					position : absolute;
+					top : 34%;
+					transform : translate(0,-50%);
+					display : block;
+					width : pxToRem(42px);
+					height : pxToRem(42px);
+					padding : pxToRem(2px);
+					border-radius : pxToRem(5px);
+					background : #fff;
+					box-shadow : 0 2px 4px 0 rgba(140,140,140,0.20);
+
+					img{
+						width : 100%;
+						height : 100%;
+						border-radius : pxToRem(5px);
+					}
+					span{
+						display : none;
+					}
+					&.stop{
+						span{
+							text-align : center;
+							padding-top : pxToRem(4px);
+							position : absolute;
+							top : 0;
+							left : 0;
+							right : 0;
+							bottom : 0;
+							z-index : 10;
+							display : block;
+							opacity : 0.5;
+							background : #000000;
+							color : #fff;
+							border-radius : pxToRem(5px);
+						}
+					}
+				}
+				div.positionmsg{
+					overflow : hidden;
+					background : #fff;
+					margin-left : pxToRem(20px);
+					border-radius:5px;
+					padding : 0 pxToRem(15px) pxToRem(13px) pxToRem(40px);
+					box-shadow : 0 2px 4px 0 rgba(140,140,140,0.10);
+				}
+				.gouzi{
+					position : absolute;
+					bottom : pxToRem(24px);
+					left : pxToRem(30px);
+					background-position : pxToRem(-187.5px) pxToRem(-340px);
+					width : pxToRem(6px);
+					height : pxToRem(31px);
+				}
+				div.timetixing{
+					background : #fff;
+					margin : pxToRem(8px) 0 0 pxToRem(20px);
+					box-shadow : 0 2px 4px 0 rgba(140,140,140,0.10);
+					border-radius:5px;
+					line-height : pxToRem(35px);
+
+					i{
+						position : relative;
+						top : pxToRem(4px);
+						background-position : 0 pxToRem(-457px);
+						width : pxToRem(18px);
+						height : pxToRem(18px);
+						margin : 0 pxToRem(10px) 0 pxToRem(40px);
+
+						&.chazi{
+							background-position : pxToRem(-112px) pxToRem(-457px);
+						}
+						&.genggai{
+							background-position : pxToRem(-36px) pxToRem(-457px);
+						}
+					}
+				}
+				p{
+					overflow : hidden;
+					color : #8c8c8c;
+					&:nth-child(1){
+						margin : pxToRem(13px) 0 pxToRem(12px) 0;
+						span{
+							color : #1d1d1d;
+							font-size : pxToRem(16px);
+						}
+					}
+					&:nth-child(2){
+						margin : 0 0 pxToRem(7px) 0;
+					}
+					&:nth-child(3){
+						margin : 0;
+					}
+					span{
+						float : left;
+						display : inline;
+						margin-right : pxToRem(15px);
+
+						&.title{
+							color : #4f4f4f;
+							span{
+								float : none;
+								color : #ec4b38;
+								margin-right : 0;
+							}
+						}
+						i.locat{
+							position : relative;
+							top : 1px;
+							margin-right : pxToRem(5px);
+							background-position : pxToRem(-32px) 0;
+							width : pxToRem(10px);
+							height : pxToRem(12px);
+						}
+					}
+					em{
+						float : left;
+						display : inline;
+						
+						&.jieduan{
+							border : 1px dashed #26c680;
+							padding : pxToRem(3px) pxToRem(5px) pxToRem(2px) pxToRem(5px);
+							font-size : pxToRem(12px);
+							color : #26c680;
+						}
+						i.xueli{
+							margin-right : pxToRem(5px);
+							background-position : pxToRem(-48px) 0;
+							width : pxToRem(12.5px);
+							height : pxToRem(11.5px);
+						}
+					}
+					b{
+						float : right;
+						display : inline;
+						
+						&.red{
+							font-size : pxToRem(16px);
+							color : #ff4b4b;
+						}
+					}
+				}
+			}
+		}
+		&.nowritentest{
+			.poslist{
+				margin-top : pxToRem(119px);
+			}
+		}
+	}
+	ul.nav{
+		position : fixed;
+		top : pxToRem(64px);
+		width : 100%;
+		left : 0;
+		z-index : 81;
+		height : pxToRem(45px);
+		li{
+			display : inline-block;
+			line-height : pxToRem(44px);
+			width : 25%;
+			text-align : center;
+			background : #fff;
+			color : #8c8c8c;
+			border-bottom : 1px solid #fff;
+			&.on{
+				border-bottom : 1px solid #31dac3;
+				color : #31dac3;
+			}
+		}
+
+		&.snav{
+			li{
+				width : 33.3333%
+			}
+		}
+	}
+	.updatamsg{
+		visibility : hidden;
+		position : fixed;
+		top : pxToRem(70px);
+		left : 0;
+		width : 100%;
+		height : pxToRem(35px);
+		line-height : pxToRem(35px);
+		text-align : center;
+		color : #b2b6bd;
+		background : transparent;
+
+		img{
+			position : relative;
+			top : pxToRem(5px);
+			display : inline-block;
+			width : 21px;
+			margin : 0 pxToRem(10px) 0 0;
+		}
+	}
+}

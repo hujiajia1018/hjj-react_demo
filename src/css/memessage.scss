@@ -1,0 +1,240 @@
+@import "~css/common";
+
+#memessagemodify{
+	position : fixed;
+	top : 0;
+	left : 0;
+	width : 100%;
+	z-index : 80;
+	.huise{
+		color : #a5aab2;
+	}
+	.huisebg{
+		background : #a5aab2;
+	}
+}
+
+.memessage{
+	background : #fff;
+	height : 100vh;
+	width : 100%;
+
+	&>.hd{
+		width : 100%;
+		display : flex;
+		display : -webkit-flex;
+		height : pxToRem(64px);
+		flex-direction : row;
+		flex-wrap : nowrap;
+		justify-content : space-around;
+		align-items : center;
+		color : #fff;
+		padding : pxToRem(20px) pxToRem(14px) 0 pxToRem(14px);
+		background-image : linear-gradient(45deg,#00D7CC,#2FE9BB);
+
+		span{
+			flex : 1;
+			font-size : pxToRem(14px);
+
+			i{
+				position : relative;
+				top : 2px;
+				margin-right : pxToRem(3px);
+				background-position : pxToRem(-104.5px) pxToRem(-14.5px);
+				width : pxToRem(10px);
+				height : pxToRem(18px);
+			}
+			&:nth-child(2){
+				font-size : pxToRem(18px);
+				text-align : center;
+			}
+			&:nth-child(3){
+				text-align : right;
+				color : #26c680;
+			}
+			&.huise{
+				color : #a5aab2;
+			}
+		}
+	}
+	.msg{
+		i{
+			position : relative;
+			top : pxToRem(2px);
+			background-position : pxToRem(-24px) pxToRem(-76px);
+			width : pxToRem(15px);
+			height : pxToRem(15px);
+			margin-right : pxToRem(10px);
+		}
+		background : #fffdee;
+		line-height : pxToRem(35px);
+		color : #8c8c8c;
+		text-align : center;
+	}
+	.bd{
+		ul{
+			background : #fff;
+			padding : 0 pxToRem(7px);
+			box-shadow : 0 0 2px 0 rgba(178,178,178,0.50);
+			li{
+				position : relative;
+				display : flex;
+				display : -webkit-flex;
+				flex-direction : row;
+				flex-wrap : nowrap;
+				justify-content : space-around;
+				align-items : center;
+				line-height : pxToRem(52px);
+				padding : 0 pxToRem(13px);
+				border-bottom : 1px solid #f0f0f0;
+				font-size : pxToRem(16px);
+
+				&.s{
+					line-height : normal;
+					height : pxToRem(44px);
+					display : block;
+					input{
+						width : 100%;
+						margin-top : pxToRem(5px);
+						line-height : pxToRem(30px);
+					}
+				}
+				span{
+					overflow : hidden;
+					white-space : nowrap;
+					text-overflow : ellipsis;
+					flex : 1;
+					color : #a5aab2;
+					&:nth-child(2){
+						font-size : pxToRem(14px);
+						text-align : right;
+					}
+					i{
+						position : absolute;
+						top : pxToRem(21px);
+						right : pxToRem(0px);
+						margin-left : pxToRem(12px);
+						background-position : pxToRem(-32.5px) pxToRem(-56px);
+						width : pxToRem(7px);
+						height : pxToRem(12px);
+					}
+				}
+				&.useicon{
+					flex : 1;
+					height : pxToRem(81px);
+					line-height : normal;
+					img{
+						width : pxToRem(61px);
+						height : pxToRem(61px);
+						border-radius : 100%;
+					}
+				}
+			}
+		}
+		p.old{
+			overflow : hidden;
+			width : pxToRem(200px);
+			margin : pxToRem(30px) auto pxToRem(60px) auto;
+			text-align : center;
+
+			span{
+				display : block;
+				margin-top : pxToRem(18px);
+				color : #1d1d1d;
+				font-size : pxToRem(16px);
+			}
+			img{
+				width : pxToRem(132px);
+				height : auto;
+			}
+		}
+		div.abor{
+			overflow : hidden;
+			margin : 0 pxToRem(20px) pxToRem(30px) pxToRem(20px);
+			background : #ffffff;
+			border : pxToRem(0.5px) solid #c7c7cc;
+			border-radius : pxToRem(4px);
+			padding : 0 pxToRem(15px);
+			min-height : pxToRem(100px);
+		}
+		p.a{
+			overflow : hidden;
+			&:nth-child(2){
+				border-top : pxToRem(0.5px) solid #f2f2f2;
+				input{
+					float : left;
+					display : inline;
+					width : 50%;
+				}
+				span{
+					float : right;
+					display : inline;
+					text-align : center;
+					color : #31dac3;
+					width : pxToRem(80px);
+					line-height : pxToRem(30px);
+					margin-top : pxToRem(10px);
+					border-radius : 6px;
+					background : #f8f8f8;
+					font-size : pxToRem(12px);
+
+					&.vdisable{
+						color : #8c8c8c;
+					}
+				}
+			}
+			input{
+				line-height : pxToRem(49px);
+				width : 100%;
+				color : #c7c7cc;
+				&::-webkit-input-placeholder{
+					color : #c7c7cc;
+				}
+				&::-moz-input-placeholder{
+					color : #c7c7cc;
+				}
+				&::-ms-input-placeholder{
+					color : #c7c7cc;
+				}
+			}
+		}
+		.sub{
+			overflow : hidden;
+			margin : 0 pxToRem(20px);
+			background : #31dac3;
+			border : pxToRem(0.5px) solid #e6e6e6;
+			box-shadow : 0 0 2px 0 rgba(178,178,178,0.50);
+			border-radius : 4px;
+			line-height : pxToRem(47px);
+			text-align : center;
+			color : #fff;
+			font-size : pxToRem(16px);
+		}
+		.erro{
+			display : none;
+			font-size : pxToRem(14px);
+			color : #9a1c07;
+			margin : pxToRem(30px) auto 0 auto;
+			&.show{
+				display : block;
+			}
+		}
+	}
+}
+
+.memessageAnimate-enter {
+	position: absolute;
+    transform: translate3d(100%,0,0);
+    transition: transform 0.4s ;
+}
+.memessageAnimate-enter.memessageAnimate-enter-active {
+    transform: translate3d(0,0,0);
+}
+.memessageAnimate-leave {
+	position: absolute;
+    transform: translate3d(0,0,0);
+    transition: transform 0.4s ;
+}
+.memessageAnimate-leave.memessageAnimate-leave-active {
+    transform: translate3d(100%,0,0);
+}

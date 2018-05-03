@@ -1,0 +1,222 @@
+@import "~css/common";
+
+.datanumbg{
+	overflow : hidden;
+	background : #fff url(../images/icon32.png) no-repeat center 0;
+	background-size : 100% pxToRem(298px);
+	height : pxToRem(298px);
+	width : 100%;
+}
+.datanum{
+	overflow : hidden;
+	position : relative;
+	transition : transform 0.35s;
+	-webkit-transition : transform 0.35s;
+	transform : translate3d(0,0,0);
+
+	&>div.bor{
+		float : left;
+		display : inline;
+		padding : pxToRem(12px) pxToRem(30px) 0 pxToRem(30px);
+		
+		div.yibishi{
+			overflow : hidden;
+			margin : 0 auto;
+			color : #8c8c8c;
+
+			.a{
+				overflow : hidden;
+				background : url(../images/icon10.png) no-repeat;
+				background-size : pxToRem(126px) pxToRem(129px);
+				height : pxToRem(129px);
+				width : pxToRem(126px);
+				margin : 0 auto;
+				span{
+					display : block;
+					text-align : center;
+					font-size : pxToRem(28px);
+					color : #e18c15;
+					margin-top : pxToRem(36px);
+					&:nth-child(2){
+						font-size : pxToRem(13px);
+						color : #fff;
+					}
+				}
+			}
+			.b{
+				margin : pxToRem(9px) 0;
+				font-size : pxToRem(14px);
+			}
+			.c{
+				text-indent : pxToRem(22px);
+				line-height : pxToRem(22px);
+			}
+			h3.jieshouluyong_yongdao{
+				background : #31dac3;
+				margin : pxToRem(20px) auto 0 auto;
+				color : #fff;
+				width : pxToRem(121px);
+				line-height : pxToRem(43px);
+				border-radius : 100px;
+				text-align : center;
+				padding-bottom : 0;
+				font-size : pxToRem(14px);
+			}
+		}
+		&#jieshouluyong_yongdao{
+			margin-top : pxToRem(20px);
+			padding : 0 pxToRem(10px);
+		}
+		div.bs{
+			margin : pxToRem(8px) 0;
+			color : #8c8c8c;
+		}
+		h2{
+			font-size : pxToRem(16px);
+			color : #8c8c8c;
+			text-align : center;
+			margin-bottom : pxToRem(10px);
+			padding-bottom : pxToRem(6px);
+			background : url(../images/icon31.png) no-repeat center 100%;
+		}
+		h3{
+			@extend h2;
+			background : none;
+			font-size : pxToRem(14px);
+			margin-bottom : pxToRem(5px);
+		}
+		p{
+			overflow : hidden;
+			color : #8c8c8c;
+			span{
+				overflow : hidden;
+				white-space : nowrap;
+				text-overflow : ellipsis;
+				float : left;
+				display : inline;
+				width : 20%;
+				line-height : pxToRem(35px);
+			}
+			em{
+				overflow : hidden;
+				white-space : nowrap;
+				text-overflow : ellipsis;
+				float : left;
+				display : inline;
+				width : 40%;
+				line-height : pxToRem(35px);
+				&.marleft{
+					margin-left : 20%;
+				}
+			}
+			&.xlf{
+				span{
+					width : 75%;
+				}
+				em{
+					width : 25%;
+					text-align : right;
+				}
+			}
+		}
+		.qikao{
+			text-align : center;
+			margin-top : 10px;
+		}
+		span.totime{
+			display : block;
+			background-image : linear-gradient(-135deg, #2be5be, #30dbc3);
+			border-radius : pxToRem(100px);
+			width : pxToRem(180px);
+			line-height : pxToRem(36px);
+			text-align : center;
+			font-size : pxToRem(14px);
+			color : #ffffff;
+			margin : 10px auto 0 auto;
+		}
+		img.genggaiimg{
+			width : pxToRem(140px);
+			height : auto;
+		}
+	}
+	div.yijujue{
+		padding : 0 pxToRem(10px);
+		p{
+			margin : pxToRem(20px) 0;
+			text-align : center;
+			color : #4f4f4f;
+
+			span{
+				display : block;
+				line-height : pxToRem(20px);
+				font-size : pxToRem(14px);
+				color : #8c8c8c;
+			}
+		}
+		img.genggaiimg{
+			width : pxToRem(246px);
+			height : auto;
+		}
+		h4{
+			font-size : pxToRem(16px);
+			color : #1d1d1d;
+			margin : pxToRem(25px) 0 pxToRem(9px) 0;
+		}
+		h3{
+			background : #31dac3;
+			margin : 0 auto;
+			color : #fff;
+			width : pxToRem(121px);
+			line-height : pxToRem(43px);
+			border-radius : 100px;
+			text-align : center;
+			font-size : pxToRem(14px);
+		}
+	}
+}
+ul.pageshow{
+	background : #fff;
+	text-align : center;
+	width : 100%;
+	padding : pxToRem(10px) 0;
+	li{
+		display : inline-block;
+		background : #d8d8d8;
+		width : pxToRem(8px);
+		height : pxToRem(8px);
+		border-radius : 100%;
+		margin : 0 pxToRem(8px);
+		&.on{
+			background : #31dac3;
+		}
+	}
+}
+div.linshi{
+	text-align : center;
+	img{
+		width : pxToRem(200px);
+		margin : pxToRem(25px) 0;
+	}
+	span{
+		display : block;
+		font-size : pxToRem(16px);
+		color : #1d1d1d;
+	}
+	&.two{
+		img{
+			width : pxToRem(246px);
+			height : auto;
+			margin-top : pxToRem(45px);
+		}
+		span{ 
+			display : block;
+			line-height : pxToRem(20px);
+			font-size : pxToRem(14px);
+			color : #8c8c8c;
+		}
+		h4{
+			font-size : pxToRem(16px);
+			color : #1d1d1d;
+		}
+	}
+}

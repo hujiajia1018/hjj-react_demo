@@ -1,0 +1,253 @@
+@import "~css/common";
+
+.education{
+	position : fixed;
+	top : 0;
+	bottom : 0;
+	left : 0;
+	right : 0;
+	background : #f8f8f8;
+	z-index : 98;
+	min-height : 100vh;
+
+	.tip{
+		top : pxToRem(44px);
+	}
+	.tipbd{
+		top : 50%;
+	}
+
+	&>.hd{
+		display : flex;
+		display : -webkit-flex;
+		height : pxToRem(64px);
+		flex-direction : row;
+		flex-wrap : nowrap;
+		justify-content : space-around;
+		align-items : center;
+		color : #fff;
+		padding : pxToRem(20px) pxToRem(14px) 0 pxToRem(14px);
+		background-image : linear-gradient(45deg,#00D7CC,#2FE9BB);
+
+		span.edu{
+			flex : 1;
+			font-size : pxToRem(14px);
+
+			i{
+				position : relative;
+				top : 2px;
+				margin-right : pxToRem(3px);
+				background-position : pxToRem(-104.5px) pxToRem(-14.5px);
+				width : pxToRem(10px);
+				height : pxToRem(18px);
+			}
+			&:nth-child(2){
+				flex : 1;
+				text-align : center;
+				font-size : pxToRem(18px);
+			}
+			&:nth-child(3){
+				flex : 1;
+				text-align : right;
+				font-size : pxToRem(16px);
+			}
+		}
+	}
+	.educationlist{
+		position : relative;
+		height : 100%;
+		margin : 0 pxToRem(10px);
+		padding : 0 pxToRem(2px);
+		li{
+			overflow : hidden;
+			margin-top : pxToRem(8px);
+			height : pxToRem(114px);
+			background : #fff;
+			box-shadow : 0 0 4px 0 rgba(0,0,0,0.08);
+			border-radius : pxToRem(5px);
+
+			&.showbtn{
+				div{
+					width : 80%;
+				}
+				b{
+					width : 20%;
+				}
+			}
+			div{
+				float : left;
+				display : inline;
+				padding : 0 pxToRem(10px);
+				width : 100%;
+				transition: all 0.2s;
+				-webkit-transition : all 0.2s;
+			}
+			b{
+				float : right;
+				display : inline-block;
+				background : #ea4e3d;
+				line-height : pxToRem(114px);
+				transition: width 0.2s;
+				-webkit-transition : width 0.2s;
+				width : 0;
+				color : #fff;
+				font-size : pxToRem(16px);
+				text-align : center;
+			}
+			p{
+				overflow : hidden;
+				&.timecon{
+					position : relative;
+					padding-top : pxToRem(10px);
+					min-height : pxToRem(78px);
+					em{
+						display : block;
+						color : #8c8c8c;
+						padding-left : pxToRem(25px);
+						&.graduated{
+							font-size : pxToRem(16px);
+							color : #1d1d1d;
+							margin-bottom : pxToRem(7px);
+						}
+						&.worklink{
+							margin-bottom : pxToRem(7px);
+							color : #31dac3;
+						}
+					}
+					i{	
+						position : absolute;
+						top : 49%;
+						right : pxToRem(10px);
+						background-position : pxToRem(-27.5px) pxToRem(-132px);
+						width : pxToRem(8px);
+						height : pxToRem(10px);
+					}
+				}
+				&.timetitle{
+					line-height : pxToRem(30px);
+					border-bottom : pxToRem(0.5px) solid #e5e5e5;
+					i{
+						position : relative;
+						top : pxToRem(3px);
+						background-position : pxToRem(-80px) pxToRem(-180px);
+						width : pxToRem(15px);
+						height : pxToRem(16px);
+						margin-right : pxToRem(10px);
+
+						&.worklisticon{
+							background-position : pxToRem(-104px) pxToRem(-180px);
+							width : pxToRem(15px);
+							height : pxToRem(15px);
+						}
+						&.honor{
+							background-position : pxToRem(-126px) pxToRem(-180px);
+							width : pxToRem(19.5px);
+							height : pxToRem(16.5px);
+						}
+					}
+				}
+				color : #8c8c8c;
+			}
+		}
+	}
+	#editedu{
+		min-height : 100vh;
+		background : #fff;
+	}
+	.editedu{
+		padding-left : pxToRem(14px);
+		li{
+			border-bottom : pxToRem(0.5px) solid #d8d8d8;
+			padding : 0 pxToRem(14px) 0 0;
+			line-height : pxToRem(53px);
+
+			&.litile{
+				margin-top : pxToRem(20px);
+				line-height : pxToRem(25px);
+				color : #8c8c8c;
+				border-bottom : 0;
+			}
+			&.pertext{
+				border-bottom : 0;
+				line-height : normal;
+				height : auto;
+
+				span{
+					line-height : pxToRem(53px);
+					float : none;
+					display : block;
+					width : 100%;
+				}
+				textarea{
+					width : 100%;
+					margin : 0 auto;
+					border : pxToRem(0.5px) solid #d8d8d8;
+					min-height : pxToRem(146px);
+					border-radius : 5px;
+					padding : pxToRem(10px);
+					color : #a5aab2;
+					&.redbor{
+						border : pxToRem(0.5px) solid red;
+					}
+				}
+				.number{
+					margin-top : 0;
+					line-height : normal;
+					text-align : right;
+					color : #a5aab2;
+					font-size : pxToRem(14px);
+				}
+			}
+			span{
+				float : left;
+				display : inline;
+				width : 38%;
+				color : #1d1d1d;
+				font-size : pxToRem(16px);
+				i.xuan{
+					background-position : pxToRem(-48px) pxToRem(-180px);
+					width : pxToRem(24px);
+					height : pxToRem(11px);
+				}
+			}
+			input{
+				float : right;
+				display : inline;
+				width : 60%;
+				text-align : right;
+				margin : pxToRem(11px) 0 0 0;
+				height : pxToRem(30px);
+				line-height : pxToRem(30px);
+				color : #a5aab2;
+
+				&.worklink{
+					color : #26c680;
+					text-decoration : underline;
+				}
+			}
+			b{
+				@extend input;
+				height : auto;
+				line-height : auto;
+				color : #a5aab2;
+			}
+			label{
+				color : red;
+				margin-right : pxToRem(5px);
+			}
+		}
+	}
+	p.complete{
+		position : fixed;
+		bottom : pxToRem(10px);
+		left : 2.5%;
+		width : 95%;
+		line-height : pxToRem(46px);
+		font-size : pxToRem(16px);
+		border-radius : pxToRem(10px);
+		box-shadow :0 2px 4px 0 rgba(223,223,223,0.50);
+		color : #ffffff;
+		text-align : center;
+		background : #31dac3;
+	}
+}

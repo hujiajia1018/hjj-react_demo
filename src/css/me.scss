@@ -1,0 +1,207 @@
+@import "~css/common";
+$color : #f2f2f2;
+$color2 : #1d1d1d;
+
+.mebor{
+	.tip_type{
+		top : 45%;
+	}
+}
+.me{
+	position : relative;
+	background : #f8f8f8;
+	min-height : 100vh;
+	padding-bottom : pxToRem(44px);
+
+	&>.hd{
+		position : relative;
+		background-image : linear-gradient(45deg,#00D7CC,#2FE9BB);
+		background-size : cover;
+		box-shadow : 0 0 2px 0 rgba(178,178,178,0.50);
+		height : pxToRem(285px);
+
+		&.blurmode{
+			background-color : none;
+		}
+		.usericon{
+			position : absolute;
+			top : pxToRem(65px);
+			left : 50%;
+			margin-left : pxToRem(-70px);
+			width : pxToRem(140px);
+			a{
+				display : block;
+				width : pxToRem(96px);
+				margin : 0 auto;
+				p{
+					margin-top : pxToRem(12px);
+					text-align : center;
+					color : #fff;
+					font-size : pxToRem(16px);
+
+					i{
+						display : block;
+						margin : pxToRem(5px) auto 0 auto;
+						background-position : 0 pxToRem(-76px);
+						width : pxToRem(15px);
+						height : pxToRem(15px);
+					}
+				}
+				b{
+					display : block;
+					width : pxToRem(75px);
+					height : pxToRem(75px);
+					margin : 0 auto;
+					background : #fff;
+					padding : pxToRem(2px);
+					border-radius : 100%;
+					box-shadow : 0 2px 4px 0 rgba(140, 140, 140, 0.2);
+					img{
+						width : 100%;
+						height : 100%;
+						border-radius : 100%;
+					}
+				}
+			}
+		}
+		i.qcode{
+			position : absolute;
+			top : pxToRem(30px);
+			right : pxToRem(10px);
+			background-position : pxToRem(-224px) pxToRem(-60px);
+			width : pxToRem(30px);
+			height : pxToRem(30px);
+		}
+	}
+	p.edit{
+		position : relative;
+		>.red{
+			display : block;
+			position : absolute;
+			left : pxToRem(57px);
+			top : pxToRem(11px);
+			background : #FF4B4B;
+			width : 8px;
+			height : 8px;
+			border-radius : 999px;
+			&.m{
+				left : pxToRem(23px);
+			}
+		}
+	}
+	ul.melist{
+		margin-top : pxToRem(33px);
+		background : #ffffff;
+		&.mar{
+			margin-top : pxToRem(10px);
+		}
+		li{
+			overflow : hidden;
+			position : relative;
+			padding : 0 pxToRem(15px) 0 0;
+
+			i{
+				position : absolute;
+				top : pxToRem(11.5px);
+				left : pxToRem(20px);
+				&.a{
+					left : pxToRem(23px);
+					background-position : 0 pxToRem(-100px);
+					width : pxToRem(16px);
+					height : pxToRem(21px);
+				}
+				&.b{
+					background-position : 0 pxToRem(-180px);
+					width : pxToRem(21px);
+					height : pxToRem(21px);
+				}
+				&.c{
+					background-position : pxToRem(-24px) pxToRem(-152px);
+					width : pxToRem(20px);
+					height : pxToRem(20px);
+				}
+				&.d{
+					background-position : pxToRem(-24px) pxToRem(-100px);
+					width : pxToRem(21px);
+					height : pxToRem(22.5px);
+				}
+				&.e{
+					background-position : 0 pxToRem(-152px);
+					width : pxToRem(20.5px);
+					height : pxToRem(20.5px);
+				}
+				&.f{
+					background-position : 0 pxToRem(-128px);
+					width : pxToRem(21.5px);
+					height : pxToRem(21.5px);
+				}
+				&.g{
+					background-position : pxToRem(-144px) pxToRem(-344px);
+					width : pxToRem(19px);
+					height : pxToRem(21px);
+				}
+			}
+			p{
+				overflow : hidden;
+				margin-left : pxToRem(55px);
+				padding : pxToRem(13px) 0;
+				color : #1d1d1d;
+				background : url(../images/icon22.png) no-repeat 100% center;
+				border-bottom : pxToRem(0.5px) solid rgba(97,205,200,0.3);
+
+				span{
+					float : right;
+					display : inline;
+					margin-right : pxToRem(12px);
+					font-size : pxToRem(12px);
+					color : #c7c7cc;
+					margin-top : pxToRem(1px);
+				}
+			}
+			&:last-child{
+				p{
+					border-bottom : 0;
+				}
+			}
+		}
+	}
+	.box{
+		position : absolute;
+		top : pxToRem(230px);
+		left : 4%;
+		background : #fff;
+		width : 92%;
+		box-shadow : 0 2px 7px 0 #cdcdcd;
+		border-radius : 8px;
+		.boxbd{
+			ul{
+				display : flex;
+				display : -webkit-flex;
+				flex-direction : row;
+				flex-wrap : nowrap;
+				justify-content : space-around;
+				align-items : center;
+				li{
+					display : inline-block;
+					flex : 1;
+					height : pxToRem(75px);
+					p{
+						overflow : hidden;
+						color : $color2;
+						margin-top : pxToRem(7px);
+						width : 100%;
+						text-align : center;
+						&:nth-child(1){
+							font-size : pxToRem(28px);
+							color : #61cdc8;
+						}
+						&:nth-child(2){
+							font-size : pxToRem(14px);
+							font-weight : 500;
+						}
+					}
+				}
+			}
+		}
+	}
+}

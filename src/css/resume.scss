@@ -1,0 +1,157 @@
+@import "~css/common";
+
+div.resume{
+	overflow : hidden;
+	width : 100%;
+	min-height : 100vh;
+	background : #f8f8f8;
+	padding-bottom : pxToRem(66px);
+
+	&>.hd{
+		position : fixed;
+		top : 0;
+		left : 0;
+		z-index : 80;
+		width : 100%;
+		display : flex;
+		display : -webkit-flex;
+		height : pxToRem(64px);
+		flex-direction : row;
+		flex-wrap : nowrap;
+		justify-content : space-around;
+		align-items : center;
+		color : #fff;
+		padding : pxToRem(20px) pxToRem(14px) 0 pxToRem(14px);
+		background-image : linear-gradient(45deg,#00D7CC,#2FE9BB);
+
+		span.resumehd{
+			flex : 2;
+			font-size : pxToRem(14px);
+
+			i{
+				position : relative;
+				top : 2px;
+				margin-right : pxToRem(3px);
+				background-position : pxToRem(-101.5px) pxToRem(-12px);
+				width : pxToRem(15px);
+				height : pxToRem(23px);
+			}
+			&:nth-child(2){
+				flex : 3;
+				text-align : center;
+				font-size : pxToRem(17px);
+			}
+			&:last-child{
+				text-align : right;
+				i.pcicon{
+					position : relative;
+					top : pxToRem(2px);
+					background-position : 0 pxToRem(-204px);
+					width : pxToRem(21px);
+					height : pxToRem(21px);
+				}
+			}
+		}
+	}
+	.titlemsg{
+		color : #8c8c8c;
+		background : #FFFDEE;
+		line-height : pxToRem(35px);
+		text-align : center;
+		margin-top : pxToRem(64px);
+		i{
+			position : relative;
+			top : 3px;
+			margin-right : pxToRem(10px);
+			background-position : pxToRem(-24px) pxToRem(-76px);
+			width : pxToRem(16px);
+			height : pxToRem(16px);
+		}
+	}
+	p.titletext{
+		line-height : pxToRem(42px);
+		font-size : pxToRem(16px);
+		color : #1d1d1d;
+		text-align : center;
+
+		i{
+			position : relative;
+			top : pxToRem(-2px);
+			left : pxToRem(3px);
+			background-position : pxToRem(-48px) pxToRem(-180px);
+			width : pxToRem(24px);
+			height : pxToRem(11px);
+		}
+	}
+	ul.resume{
+		margin : 0 pxToRem(10px);
+		background : #fff;
+		box-shadow : 0 0 4px 0 rgba(0,0,0,0.08);
+		border-radius : 5px;
+		li{
+			position : relative;
+			line-height : pxToRem(43px);
+			border-bottom : pxToRem(0.5px) solid #c7c7cc;
+			width : 94%;
+			padding-left : pxToRem(13px);
+			margin : 0 auto;
+			color : #8c8c8c;
+			a{
+				display : block;
+				color : #8c8c8c;
+			}
+
+			&:last-child{
+				border-bottom : 0;
+			}
+
+			i.a{
+				position : absolute;
+				right : 13px;
+				top : pxToRem(15px);
+				background-position : pxToRem(-32.5px) pxToRem(-56px);
+				width : pxToRem(7px);
+				height : pxToRem(12px);
+			}
+			i.b{
+				position : absolute;
+				right : pxToRem(30px);
+				top : pxToRem(15px);
+				background-position : pxToRem(-26.5px) pxToRem(-180px);
+				width : pxToRem(16px);
+				height : pxToRem(16px);
+			}
+		}
+	}
+	.sub{
+		position : fixed;
+		bottom : pxToRem(10px);
+		left : 2.5%;
+		width : 95%;
+		background : #31dac3;
+		border-radius : pxToRem(10px);
+		line-height : pxToRem(46px);
+		text-align : center;
+		a{
+			display : block;
+			color : #fff;
+			font-size : pxToRem(16px);
+		}
+	}
+}
+.personmessageAnimate-enter {
+	position: fixed;
+    transform: translate3d(100%,0,0);
+    transition: transform 0.4s ;
+}
+.personmessageAnimate-enter.personmessageAnimate-enter-active {
+    transform: translate3d(0,0,0);
+}
+.personmessageAnimate-leave {
+	position: fixed;
+    transform: translate3d(0,0,0);
+    transition: transform 0.4s ;
+}
+.personmessageAnimate-leave.personmessageAnimate-leave-active {
+    transform: translate3d(100%,0,0);
+}

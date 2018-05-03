@@ -1,0 +1,125 @@
+@import "~css/common";
+
+.newme{
+	>.hd{
+		position : fixed;
+		top : 0;
+		left : 0;
+		width : 100%;
+		z-index : 99;
+		display : flex;
+		display : -webkit-flex;
+		height : pxToRem(64px);
+		flex-direction : row;
+		flex-wrap : nowrap;
+		justify-content : space-around;
+		align-items : center;
+		color : #fff;
+		padding : pxToRem(20px) pxToRem(14px) 0 pxToRem(14px);
+		background-image : linear-gradient(45deg,#00D7CC,#2FE9BB);
+
+		span{
+			flex : 2;
+			font-size : pxToRem(14px);
+
+			i{
+				position : relative;
+				top : 2px;
+				margin-right : pxToRem(3px);
+				background-position : pxToRem(-104.5px) pxToRem(-14.5px);
+				width : pxToRem(10px);
+				height : pxToRem(18px);
+			}
+			&:nth-child(2){
+				flex : 3;
+				text-align : center;
+				font-size : pxToRem(18px);
+			}
+		}
+	}
+	.newmebd{
+		overflow : hidden;
+		padding-top : pxToRem(81px);
+
+		p.title{
+			text-align : center;
+			color : #8c8c8c;
+			font-size : pxToRem(16px);
+			margin-bottom : pxToRem(15px);
+		}
+		.uploadimg{
+			overflow : hidden;
+			height : pxToRem(88px);
+			width : pxToRem(88px);
+			box-shadow : 0 0 4px 0 rgba(134,134,134,0.50);
+			border-radius : 100%;
+			margin : 0 auto pxToRem(20px) auto;
+			padding : pxToRem(2px);
+
+			img{
+				width : 100%;
+				height : 100%;
+				border-radius : 100%;
+			}
+		}
+		.sexselect{
+			text-align : center;
+			margin-bottom : pxToRem(25px);
+			display : flex;
+			display : -webkit-flex;
+			align-items : center;
+			justify-content : space-around;
+
+			img{
+				display : inline-block;
+				width : pxToRem(53px);
+			}
+		}
+		.detailmsd{
+			padding : 0 pxToRem(15px);
+			margin : 0 auto;
+			width : pxToRem(335px);
+			border : 5px solid #f4f4f4;
+			border-radius : 15px;
+
+			li{
+				display : flex;
+				display : -webkit-flex;
+				align-items : center;
+				font-size : pxToRem(16px);
+				color : #393939;
+				align-content : center;
+				justify-content : space-between;
+				border-bottom : pxToRem(0.5px) dashed #d9d9d9;
+				line-height : pxToRem(40px);
+
+				:last-child{
+					border-bottom : 0;
+				}
+			}
+			input{
+				text-align : right;
+				color : #8c8c8c;
+				&::-webkit-input-placeholder{
+					text-align : right;
+				}
+			}
+			span{
+				color : #8c8c8c;
+				font-size : 14px;
+			}
+		}
+		p.save{
+			overflow : hidden;
+			width : pxToRem(335px);
+			margin : pxToRem(20px) auto;
+			background-image : linear-gradient(45deg, #2ee9bb ,#00d7cd);
+			border-radius : pxToRem(11px);
+			line-height : pxToRem(42px);
+			font-size : pxToRem(16px);
+			text-align : center;
+			color : #fff;
+		}
+	}
+}
+

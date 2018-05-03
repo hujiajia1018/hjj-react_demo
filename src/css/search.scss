@@ -1,0 +1,208 @@
+@import "~css/common";
+$color : #b2b6bd;
+
+div.search{
+	background : #fff;
+	min-height : 100vh;
+
+	.hd{
+		position : fixed;
+		top : 0;
+		left : 0;
+		z-index : 80;
+		width : 100%;
+		display : -webkit-flex;
+		display : flex;
+		flex-direction : row;
+		flex-wrap : nowrap;
+		justify-content : space-around;
+		align-items : center;
+		height : pxToRem(64px);
+		font-size : pxToRem(17px);
+		color : $color;
+		padding : pxToRem(20px) pxToRem(14px) 0 pxToRem(14px);
+		background-image : linear-gradient(45deg,#00D7CC,#2FE9BB);
+
+		div{
+			overflow : hidden;
+			flex : 10;
+			display : inline;
+			background : #fff;
+			border-radius : 8px;
+			width : 100%;
+			border : 1px solid #f1f1f1;
+			height : pxToRem(30px);
+			padding : 0 pxToRem(10px) 0 pxToRem(10px);
+
+			form{
+				position : relative;
+				float : left;
+				display : inline;
+				left : pxToRem(8px);
+				width : 70%;
+				top : pxToRem(1.3px);
+				margin-top : pxToRem(2px);
+				input{
+					width : 87%;
+					color : #8c8c8c;
+				}
+				i{
+					position : relative;
+					top : pxToRem(3px);
+					background-position : pxToRem(-55px) pxToRem(-153.5px);
+					width : pxToRem(15px);
+					height : pxToRem(15px);
+				}
+			}
+			em{
+				overflow : hidden;
+				float : left;
+				display : inline;
+				width : 30%;
+				text-align : left;
+				font-size : pxToRem(14px);
+				white-space : nowrap;
+				text-overflow : ellipsis;
+				padding-right : pxToRem(10px);
+				margin-top : pxToRem(6px);
+
+				b{
+					float : left;
+					display : inline;
+					overflow : hidden;
+					white-space : nowrap;
+					text-overflow : ellipsis;
+					max-width : 94%;
+					color : #8c8c8c;
+				}
+				i{	
+					position : relative;
+					top : pxToRem(-2px);
+					margin-left : pxToRem(5px);
+					background-position : pxToRem(-90px) pxToRem(-60px);
+					width : pxToRem(10.5px);
+					height : pxToRem(6px);
+				}
+			}
+		}
+		a{
+			color : #fff;
+		}
+		span{
+			flex : 2;
+			text-align : right;
+			font-size : pxToRem(15px);
+		}
+	}
+	.box{
+		margin-top : pxToRem(64px);
+		padding : pxToRem(60px) pxToRem(4px) 0 pxToRem(4px);
+		h1{
+			font-size : pxToRem(16px);
+			color : #1d1d1d;
+			text-align : center;
+			font-weight : bold;
+			margin-bottom : pxToRem(36px);
+		}
+		h1.his{
+			margin : pxToRem(75px) 0 pxToRem(35px) 0;
+		}
+		.flexbox{
+			display : flex;
+			display : -webkit-flex;
+			height : pxToRem(44px);
+			flex-direction : row;
+			flex-wrap : wrap;
+			justify-content : flex-start;
+			align-items : flex-start;
+			width : pxToRem(330px);
+			margin : 0 auto;
+
+			span{
+				width : pxToRem(110px);
+				margin-bottom : pxToRem(10px);
+				display : inline-block;
+				font-size : pxToRem(16px);
+				color : #8c8c8c;
+				text-align : center;
+				line-height : pxToRem(25px);
+				border-right : 1px solid #efefef;
+				&:nth-child(3){
+					border-right : 0;
+				}
+				&:nth-child(6){
+					border-right : 0;
+				}
+			}
+		}
+		.historybox{
+			overflow : hidden;
+			text-align : center;
+
+			&.hisoryheight{
+				.mark{
+					display : none;
+				}
+				.historyboxcont{
+					overflow-y : scroll;
+					height : pxToRem(230px);	
+				}
+				i.a{
+					background-position : pxToRem(-76px) pxToRem(-14.5px);
+				}
+			}
+			.historyboxcont{
+				overflow : hidden;
+				position : relative;
+				height : pxToRem(100px);
+				margin-bottom : pxToRem(10px);
+			}
+			.mark{
+				position : absolute;
+				bottom : 0;
+				background-image : linear-gradient(180deg,hsla(0,0%,100%,.3),#fff);
+				width : 100%;
+				height : 100%;
+			}
+			span{
+				display : block;
+				margin-bottom : pxToRem(10px);
+				width : 100%;
+				font-size : pxToRem(16px);
+				color : #8c8c8c;
+			}
+			b{
+				position : relative;
+				display : inline-block;
+				background : #31dac3;
+				width : pxToRem(32px);
+				height : pxToRem(32px);
+				border-radius:100%;
+				margin : 0 pxToRem(9px);
+
+				.a{
+					position : absolute;
+					top : 50%;
+					left : 50%;
+					transform:translate(-50%,-50%);
+					width : pxToRem(19px);
+					height : pxToRem(11px);
+					background-position : pxToRem(-54px) pxToRem(-14.5px);
+				}
+				.b{
+					position : absolute;
+					top : 50%;
+					left : 50%;
+					transform:translate(-50%,-50%);
+					width : pxToRem(19px);
+					height : pxToRem(19px);
+					background-position : pxToRem(-28px) pxToRem(-14.5px);
+				}
+			}
+		}
+		h2{
+			margin : pxToRem(28px) 0 pxToRem(16px) pxToRem(10px);
+			@extend h1;
+		}
+	}
+}

@@ -1,0 +1,84 @@
+@import "~css/common";
+
+.property{
+	overflow : hidden;
+	.bd{
+		background : #fff;
+		p{
+			background : #f9f9f9;
+			line-height : pxToRem(25px);
+			font-size : pxToRem(14px);
+			color : #9f9f9f;
+			padding-left : pxToRem(14px);
+		}
+		&>ul{
+			overflow : scroll;
+			height : pxToRem(376px);
+			margin-bottom : pxToRem(10px);
+			padding : pxToRem(20px) pxToRem(14px) 0 pxToRem(14px);
+
+			li{
+				display : inline-block;
+				width : 25%;
+				padding : 0 5px;
+				margin-bottom : pxToRem(11px);
+
+				b{
+					display : block;
+					overflow : hidden;
+					background : #fff;
+					text-align : center;
+					white-space : nowrap;
+					text-overflow : ellipsis;
+					border : pxToRem(0.5px) solid #e9e9e9;
+					color : #8c8c8c;
+					font-size : pxToRem(14px);
+					padding : 0 pxToRem(2px);
+					line-height : pxToRem(29px);
+					border-radius : 5px;
+				}
+				&.on{
+					b{
+						background : #31dac3;
+						border : pxToRem(0.5px) solid #31dac3;
+						border : 0;
+						color : #fff;
+					}
+				}
+			}
+		}
+
+		span{
+			display : inline-block;
+			background : #f9f9f9;
+			width : 50%;
+			line-height : pxToRem(40px);
+			text-align : center;
+			color : #fff;
+			font-size : pxToRem(16px);
+			color : #8c8c8c;
+
+			&.yes{
+				color : #fff;
+				background : #31dac3;
+			}
+		}
+		em{
+			background : #fff;
+			border : pxToRem(0.5px) solid #c7c7cc;
+			border-radius : pxToRem(5px);
+			padding : 0 pxToRem(10px);
+			line-height : pxToRem(29px);
+			text-align : center;
+			color : #8c8c8c;
+			display : inline-block;
+			margin : pxToRem(10px);
+
+			&.on{
+				background : #31dac3;
+				color : #fff;
+				border : pxToRem(0.5px) solid #31dac3;
+			}
+		}
+	}
+}

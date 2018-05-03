@@ -1,0 +1,413 @@
+@import "~css/common";
+
+.interest{
+	background : #f8f8f8;
+	min-height : 100vh;
+	.tip{
+		top : pxToRem(44px);
+	}
+	&>.hd{
+		position : fixed;
+		top : 0;
+		left : 0;
+		z-index : 80;
+		width : 100%;
+		display : flex;
+		display : -webkit-flex;
+		flex-direction : row;
+		flex-wrap : nowrap;
+		justify-content : space-around;
+		align-items : center;
+		color : #fff;
+		height : pxToRem(64px);
+		padding : pxToRem(20px) pxToRem(14px) 0 pxToRem(14px);
+		background-image : linear-gradient(45deg,#00D7CC,#2FE9BB);
+
+		span{
+			flex : 1;
+			a{
+				display : block;
+			}
+			i{
+				position : relative;
+				top : 2px;
+				display : inline-block;
+				background-position : pxToRem(-104.5px) pxToRem(-14.5px);
+				width : pxToRem(10px);
+				height : pxToRem(18px);
+			}
+			&:nth-child(2){
+				flex : 1;
+				text-align : center;
+				font-size : pxToRem(18px);
+			}
+		}
+	}
+	.mar{
+		.bd:nth-child(1){
+			margin-top : pxToRem(64px);
+		}
+	}
+	.bd{
+		text-align : center;
+		h1{
+			display : inline-block;
+			border-radius:5px;
+			font-size : pxToRem(14px);
+			color : #fff;
+			background : #bebebe;
+			margin : pxToRem(10px) auto;
+			padding : pxToRem(4px) pxToRem(9px);
+		}
+	}
+	ul.poslist{
+		width : 100%;
+		padding : 0 pxToRem(10px);
+
+		li{
+			position : relative;
+			margin-bottom : pxToRem(10px);
+			&:last-child{
+				margin-bottom : pxToRem(3px);
+			}
+			label{
+				position : absolute;
+				top : pxToRem(26px);
+				display : block;
+				width : pxToRem(42px);
+				height : pxToRem(42px);
+				padding : pxToRem(2px);
+				border-radius : pxToRem(5px);
+				background : #fff;
+				box-shadow : 0 2px 4px 0 rgba(140,140,140,0.20);
+
+				img{
+					width : 100%;
+					height : 100%;
+					border-radius : pxToRem(5px);
+				}
+				span{
+					display : none;
+				}
+				&.stop{
+					span{
+						text-align : center;
+						padding-top : pxToRem(4px);
+						position : absolute;
+						top : 0;
+						left : 0;
+						right : 0;
+						bottom : 0;
+						z-index : 10;
+						display : block;
+						opacity : 0.5;
+						background : #000000;
+						color : #fff;
+						border-radius : pxToRem(5px);
+					}
+				}
+			}
+			p{
+				margin : 10px 0;
+				color : #a5aab2;
+				position : relative;
+				z-index : 2;
+
+				&:nth-child(1){
+					display : flex;
+					display : -webkit-flex;
+					flex-direction : row;
+					flex-wrap : nowrap;
+					justify-content : space-around;
+					align-items : left;
+
+					span.title{
+						flex : 2;
+						overflow:hidden;
+						margin-right : 0; 
+						text-overflow:ellipsis;
+						white-space:nowrap;
+						text-align : left;
+					}
+					b{
+						text-align : right;
+						flex : 1;
+					}
+				}
+
+				&:nth-child(2){
+					span{
+						margin-right : 0;
+					}
+				}
+				span{
+					float : left;
+					display : inline;
+					margin-right : pxToRem(15px);
+
+					&.title{
+						color : #1d1d1d;
+						margin-right : 0;
+						font-size : pxToRem(16px);
+					}
+					i.locat{
+						position : relative;
+						top : 1px;
+						margin-right : pxToRem(5px);
+						background-position : pxToRem(-32px) 0;
+						width : pxToRem(10px);
+						height : pxToRem(12px);
+					}
+				}
+				em{
+					float : left;
+					display : inline;
+					
+					&.jieduan{
+						border : 1px dashed #26c680;
+						padding : pxToRem(3px) pxToRem(5px) pxToRem(2px) pxToRem(5px);
+						font-size : pxToRem(12px);
+						color : #26c680;
+					}
+					i.xueli{
+						margin-right : pxToRem(5px);
+						background-position : pxToRem(-48px) 0;
+						width : pxToRem(12.5px);
+						height : pxToRem(11.5px);
+					}
+				}
+				b{
+					float : right;
+					display : inline;
+					
+					&.red{
+						font-size : pxToRem(16px);
+						color : #ff4b4b;
+					}
+				}
+			}
+			div.positionmsg{
+				overflow : hidden;
+				background : #fff;
+				margin-left : pxToRem(20px);
+				border-radius:5px;
+				height : pxToRem(98px);
+				padding : 0 pxToRem(15px) 0 pxToRem(40px);
+				box-shadow : 0 2px 4px 0 rgba(140,140,140,0.10);
+
+				p{
+					overflow : hidden;
+				}
+			}
+		}
+	}
+	.box{
+		display : flex;
+		display : -webkit-flex;
+		flex-direction : row;
+		flex-wrap : nowrap;
+		justify-content : space-around;
+		align-items : center;
+		height : pxToRem(120px);
+		border-bottom : 1px solid #f0f0f0;
+
+		div:nth-child(1){
+			text-align : center;
+			padding : 0 pxToRem(10px);
+			flex : 1;
+		}
+		div:nth-child(2){
+			flex : 4;
+			p.name{
+				font-size : pxToRem(14px);
+				color : #4f4f4f;
+				letter-spacing : 0.8px;
+			}
+			p.location{
+				font-size : pxToRem(13px);
+				color : #a5aab2;
+				margin-top : pxToRem(10px);
+
+				i{
+					position : relative;
+					top : pxToRem(1.5px);
+					margin-right : pxToRem(5px);
+					background-position : 0 pxToRem(-158px);
+					width : pxToRem(8px);
+					height : pxToRem(12px);
+				}
+			}
+			p.jobdetail{
+				@extend p.location;
+				margin-top : pxToRem(10px);
+
+				em{
+					color : #26c680;
+					margin : 0 pxToRem(5px);
+				}
+			}
+		}
+		div:nth-child(3){
+			flex : 2.2;
+			text-align : center;
+			p{
+				font-size : pxToRem(12px);
+				color : #a5aab2;
+			}
+			b{
+				display : block;
+				width : pxToRem(35px);
+				height : pxToRem(35px);
+				line-height : pxToRem(35px);
+				border : 1px solid #a5aab2;
+				border-radius : 50%;
+				margin : 0 auto pxToRem(4px) auto;
+
+				i{
+					background-position : pxToRem(-16px) pxToRem(-156px);
+					width : pxToRem(13px);
+					height : pxToRem(10px);
+				}
+			}
+			&.hot{
+				color : #26c680;
+				position : relative;
+				span{
+					font-size : pxToRem(18px);
+				}
+				p{
+					font-size : pxToRem(14px);
+				}
+				i{	
+					position : absolute;
+					top : pxToRem(13px);
+					right : pxToRem(7px);
+					background-position : pxToRem(-32.5px) pxToRem(-56px);
+					width : pxToRem(7px);
+					height : pxToRem(12px);
+				}
+			}
+			&.online{
+				p{
+					color : #26c680;
+				}
+				b{
+					border : 1px solid #26c680;
+				}
+				i{
+					background-position : pxToRem(-36px) pxToRem(-156px);
+				}
+			}
+		}
+	}
+	.box2{
+		display : flex;
+		display : -webkit-flex;
+		flex-direction : row;
+		flex-wrap : nowrap;
+		justify-content : space-around;
+		background : #fff;
+		width : 95%;
+		margin : 0 auto pxToRem(10px) auto;
+		box-shadow : 0 2px 4px 0 rgba(209,209,209,0.37);
+		border-radius : 5px;
+		text-align : left;
+
+		p{
+			overflow : hidden;
+		}
+		div:nth-child(1){
+			flex : 1;
+			text-align : center;
+			padding : pxToRem(14px);
+			b{
+				display : block;
+				width : pxToRem(62px);
+				height : pxToRem(62px);
+				padding : pxToRem(2px);
+				border-radius : 5px;
+				box-shadow : 0 2px 4px 0 rgba(140, 140, 140, 0.2);
+			}
+			img{
+				border-radius : 5px;
+				width : 100%;
+				height : 100%;
+			}
+		}
+		div:nth-child(2){
+			flex : 5;
+			padding-right : pxToRem(15px);
+			p.name{
+				margin-top : pxToRem(10px);
+				font-size : pxToRem(16px);
+				color : #1d1d1d;
+			}
+			p.fuli{
+				span{
+					display : inline-block;
+					margin-right : pxToRem(10px);
+					border : pxToRem(0.5px) solid #31dac3;
+					border-radius : 5px;
+					line-height : pxToRem(22px);
+					text-align : center;
+					color : #8c8c8c;
+					padding : 0 pxToRem(5px);
+					font-size : pxToRem(12px);
+				}
+			}
+			p.location{
+				font-size : pxToRem(13px);
+				color : #a5aab2;
+				margin : pxToRem(7px) 0 pxToRem(13px) 0;
+
+				i{
+					position : relative;
+					top : pxToRem(1.5px);
+					margin-right : pxToRem(5px);
+					background-position : pxToRem(-32px) 0;
+					width : pxToRem(10px);
+					height : pxToRem(12px);
+				}
+				i.number{
+					background-position : 0 pxToRem(-35.5px);
+					width : pxToRem(11px);
+					height : pxToRem(11px);
+					margin-left : pxToRem(18px);
+				}
+			}
+		}
+		div.bofang{
+			text-align : right;
+			height : pxToRem(40px);
+			padding-top : pxToRem(11px);
+			p{
+				position : relative;
+				top : pxToRem(-3px);
+				display : inline-block;
+				font-size : pxToRem(12px);
+				color : #8c8c8c;
+				margin : 0 0 0 pxToRem(8px);
+			}
+			i{
+				background-position : pxToRem(-203.5px) pxToRem(-24px);
+				width : pxToRem(21px);
+				height : pxToRem(18px);
+			}
+			&.online{
+				i{
+					background-position : pxToRem(-229px) pxToRem(-24px);
+					width : pxToRem(21px);
+					height : pxToRem(21px);
+				}
+			}
+		}
+		div.commsg{
+			line-height : 36px;
+			border-top : 1px solid #f8f8f8;
+			color : #8c8c8c;
+			span{
+				color : #ff4b4b;
+			}
+		}
+	}
+}

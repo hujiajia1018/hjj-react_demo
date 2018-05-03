@@ -1,0 +1,220 @@
+@import "~css/common";
+$color : #1d1d1d;
+
+#manage{
+	z-index : 81;
+	&>.hd{
+		position : static;
+		span:last-child{
+			flex : 1;
+			text-align : center;
+		}
+		a{
+			flex : 1;
+		}
+	}
+	.tip_type{
+		top : 55%;
+	}
+	.titlemsg{
+		margin-top : 0;
+	}
+}
+.job{
+	position : fixed;
+	top : 0;
+	bottom : 0;
+	left : 0;
+	right : 0;
+	background : #f8f8f8;
+	z-index : 18;
+
+	&>.hd{
+		background-image : linear-gradient(45deg,#00D7CC,#2FE9BB);
+		width : 100%;
+		display : flex;
+		display : -webkit-flex;
+		flex-direction : row;
+		flex-wrap : nowrap;
+		justify-content : space-around;
+		align-items : center;
+		color : #fff;
+		height : pxToRem(64px);
+		padding : pxToRem(20px) pxToRem(14px) 0 pxToRem(14px);
+
+		span{
+			flex : 1;
+			font-size : pxToRem(14px);
+			&:nth-child(1){
+				text-align : left;
+			}
+			i{
+				position : relative;
+				top : 3px;
+				display : inline-block;
+				background-position : pxToRem(-104.5px) pxToRem(-14.5px);
+				width : pxToRem(10px);
+				height : pxToRem(18px);
+			}
+			&:nth-child(2){
+				flex : 3;
+				text-align : center;
+				font-size : pxToRem(18px);
+				color : #fff;
+			}
+			&:last-child{
+				text-align : right;
+			}
+		}
+	}
+	&.joblistback{
+		background : #fff;
+	}
+	.box{
+		#joblistnoscroll{
+			height : calc(100vh - 3.2rem);
+			overflow-y : scroll;
+		}
+		ul.joblist{
+			background : #fff;
+			li{
+				overflow : hidden;
+				font-size : pxToRem(14px);
+				color : $color;
+				height : pxToRem(52px);
+				line-height : pxToRem(52px);
+				border-bottom : 1px solid #f0f0f0;
+				padding-left : pxToRem(17px);
+
+				span{
+					float : left;
+					display : inline;
+				}
+				i{
+					float : right;
+					display : inline;
+					margin : pxToRem(21px) pxToRem(10px) 0 0;
+					background-position : pxToRem(-32.5px) pxToRem(-56px);
+					width : pxToRem(8px);
+					height : pxToRem(12px);
+				}
+			}
+		}
+		ul.managejoblist{
+			position : relative;
+			min-height : 50vh;
+			li{
+				overflow : hidden;
+				height : pxToRem(74px);
+				background : #fff;
+				margin-bottom : pxToRem(10px);
+
+				p{
+					margin-top : pxToRem(15px);
+					span{
+						overflow : hidden;
+						display : inline-block;
+						width : 50%;
+						white-space : nowrap;
+						text-overflow : ellipsis;
+					}
+					&:nth-child(1){
+						span{
+							color : #1d1d1d;
+							&:nth-child(1){
+								font-size : pxToRem(14px);
+							}
+							&:nth-child(2){
+								color : #ff4b4b;
+								font-size : pxToRem(16px);
+								text-align : right;
+							}
+						}
+					}
+					&:nth-child(2){
+						margin-top : pxToRem(4px);
+						span{
+							color : #8c8c8c;
+							font-size : pxToRem(14px);
+							&:nth-child(2){
+								text-align : right;
+							}
+						}
+					}
+				}
+
+				&.showbtn{
+					div{
+						width : 80%;
+					}
+					b{
+						width : 20%;
+					}
+				}
+				div{
+					float : left;
+					display : inline;
+					padding : 0 pxToRem(14px);
+					width : 100%;
+					transition: all 0.2s;
+					-webkit-transition : all 0.2s;
+				}
+				b{
+					float : right;
+					display : inline-block;
+					background : #ea4e3d;
+					line-height : pxToRem(74px);
+					transition: width 0.2s;
+					-webkit-transition : width 0.2s;
+					width : 0;
+					color : #fff;
+					font-size : pxToRem(16px);
+					text-align : center;
+				}
+			}
+		}
+		.adduserjob{
+			position : absolute;
+			bottom : pxToRem(10px);
+			left : 2.5%;
+			width : 95%;
+			height : pxToRem(40px);
+			line-height : pxToRem(40px);
+			text-align : center;
+			background : #31dac3;
+			color : #fff;
+			font-size : pxToRem(16px);
+			border-radius : 10px;
+			box-shadow : 0 2px 4px 0 rgba(223,223,223,0.50);
+		}
+	}
+	.titlemsg{
+		color : #8c8c8c;
+		background : #FFFDEE;
+		line-height : pxToRem(35px);
+		text-align : center;
+		
+		i{
+			position : relative;
+			top : 3px;
+			margin-right : pxToRem(10px);
+			background-position : pxToRem(-24px) pxToRem(-76px);
+			width : pxToRem(16px);
+			height : pxToRem(16px);
+		}
+	}
+}
+.detailJobAnimate-enter {
+    transition: opacity 0.4s ;
+    opacity : 0;
+}
+.detailJobAnimate-enter.detailJobAnimate-enter-active {
+    opacity : 1;
+}
+.detailJobAnimate-leave {
+	opacity : 1;
+    transition: opacity 0.4s ;
+}
+.detailJobAnimate-leave.detailJobAnimate-leave-active {
+    opacity : 0;
+}

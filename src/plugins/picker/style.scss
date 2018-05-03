@@ -1,0 +1,158 @@
+@import "~css/common";
+$color : #1d1d1d;
+$color1 : #b5b5b5;
+.picker-icon{background:url(icon.png) no-repeat;background-size:pxToRem(164px) pxToRem(64px);}
+
+.picker{
+	position : absolute;
+  z-index : 9999;
+	top : 0;
+	left : 0;
+	right : 0;
+	bottom : 0;
+	background-color : rgba(0 ,0 ,0 ,0.5);
+
+	.content{ 
+		position : absolute;
+		left : 0;
+		bottom : 0;
+		width : 100%;
+		height : pxToRem(245px);
+		background : #fff;
+		transition : transform 0.3s;
+    -webkit-transition : transform 0.3s;
+    transform : translate3d(0,245px,0);
+    -webkit-transform : translate3d(0,245px,0);
+
+    &.animated{
+      transform : translate3d(0,0,0);
+      -webkit-transform : translate3d(0,0,0);
+    }
+
+		.hd{
+			height : pxToRem(35px);
+			display : -webkit-flex;
+  		display : flex;
+  		flex-direction : row;
+  		flex-wrap : nowrap;
+  		justify-content : space-around;
+  		align-items : center;
+
+  		span{
+  			text-align:center;
+        i{
+          display : inline-block;
+        }
+  		}
+  		span:nth-child(1){
+  			flex : 1;
+        i{
+          background-position : 0 pxToRem(-13px);
+          width : pxToRem(12px);
+          height : pxToRem(12px);
+        }
+			}
+  		span:nth-child(3){
+  			@extend span:nth-child(1);
+        i{
+          background-position : 0 0;
+          width : pxToRem(15px);
+          height : pxToRem(10px);
+        }
+  		}
+			span:nth-child(2){
+ 				flex : 2;
+        font-size : pxToRem(16px);
+        color : $color;
+ 			}
+		}
+
+    .msg{
+      position : absolute;
+      left : 50%;
+      transform : translate(-50%,0);
+      top : pxToRem(71px);
+      z-index : 10;
+      background-position : 0 pxToRem(-28px);
+      width : pxToRem(164px);
+      height : pxToRem(33.5px);
+      line-height : pxToRem(33.5px);
+      text-align : center;
+      font-size : pxToRem(12px);
+    }
+
+		.bd{
+			display : -webkit-flex;
+  		display : flex;
+  		flex-direction : row;
+  		flex-wrap : nowrap;
+  		justify-content : space-around;
+  		touch-action : none;
+
+      .wheel{
+        position : relative;
+        left : 0;
+        top : pxToRem(70px);
+        width : 100%;
+        border-top : pxToRem(0.5px) solid #f7f7f7;
+        border-bottom : pxToRem(0.5px) solid #f7f7f7;
+        background : #f7f7f7;
+        height : pxToRem(35px);
+        border-right : 0;
+      }
+      .bd-ul{
+        overflow : hidden;
+        height : pxToRem(210px);
+        flex : 1;
+      }
+      
+  		.ul{
+        overflow : hidden;
+        position : relative;
+  			text-align : center;
+  			touch-action : none;
+  			-webkit-transition : -webkit-transform .2s ease-out;
+  			transition : transform .2s ease-out;
+        border-right : 1px solid #000;
+        top : pxToRem(-140px);
+        touch-action:none;
+        
+        &>li{
+          touch-action : none;
+          width : 100%;
+          height : pxToRem(35px);
+          line-height : pxToRem(35px);
+          font-size : pxToRem(16px);
+          color : $color1;
+        }
+        li:nth-child(5){
+          font-size : pxToRem(18px);
+          color : #31dac3;
+        }
+        &.four{
+          li:nth-child(3){
+            font-size : pxToRem(18px);
+            color : #31dac3;
+          }
+        }
+			}
+      .ul:last-child{
+        border-right : 0;
+      }
+		}
+	}
+}
+.pickerMsgAnimate-enter {
+    transition: opacity 0.4s ;
+    opacity : 0;
+}
+.pickerMsgAnimate-enter.pickerMsgAnimate-enter-active {
+    opacity : 1;
+}
+.pickerMsgAnimate-leave {
+  opacity : 1;
+    transition: opacity 0.4s ;
+}
+.pickerMsgAnimate-leave.pickerMsgAnimate-leave-active {
+    opacity : 0;
+}

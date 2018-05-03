@@ -1,0 +1,81 @@
+@import "~css/common";
+$color : #b2b6bd;
+
+.subscription{
+	background : #efeef4;
+	height : 100vh;
+	.tip{
+		top : pxToRem(44px);
+	}
+	&>.hd{
+		display : flex;
+		display : -webkit-flex;
+		flex-direction : row;
+		flex-wrap : nowrap;
+		justify-content : space-around;
+		align-items : center;
+		color : $color;
+		height : pxToRem(44px);
+		box-shadow : 0 0 1px 0 #b2b2b2;
+		padding : 0 pxToRem(14px);
+		background : #fafafa;
+		span{
+			flex : 1;
+			color : #666;
+			i{
+				position : relative;
+				top : 2px;
+				display : inline-block;
+				background-position : pxToRem(-50px) pxToRem(-56px);
+				width : pxToRem(8.5px);
+				height : pxToRem(14px);
+				margin-right : pxToRem(3px);
+			}
+			&:nth-child(2){
+				flex : 1;
+				text-align : center;
+				font-size : pxToRem(17px);
+				color : #4f4f4f;
+			}
+			&:last-child{
+				text-align : right;
+			}
+		}
+	}
+	.bd{
+		margin-top : pxToRem(10px);
+		ul{
+			min-height : 50vh;
+			li{
+				overflow : hidden;
+				background : #fff;
+				height : pxToRem(60px);
+				padding : 0 pxToRem(7px);
+				border-bottom : 1px solid #f0f0f0;
+				img{
+					float : left;
+					display : inline;
+					width : pxToRem(40px);
+					height : pxToRem(40px);
+					margin : pxToRem(9px) 0 0 pxToRem(5px);
+				}
+				span{
+					float : left;
+					display : inline;
+					margin : pxToRem(20px) 0 0 pxToRem(10px);
+				}
+				em{
+					float : right;
+					display : inline;
+					background : #26c680;
+					border-radius : pxToRem(5px);
+					width : pxToRem(60px);
+					text-align : center;
+					color : #fff;
+					line-height : pxToRem(26px);
+					margin : pxToRem(17px) pxToRem(5px) 0 0;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,95 @@
+@import "~css/common";
+
+.share{
+	position : fixed;
+	top : 0;
+	bottom : 0;
+	left : 0;
+	right : 0;
+	background-color : rgba(0 ,0 ,0 ,0.5);
+	z-index : 98;
+
+	.content{
+		position : absolute;
+		bottom : 0;
+		left : 0;
+		width : 100%;
+		background : #fff;
+		height : pxToRem(230px);
+		padding-top : pxToRem(16px);
+
+		p{	
+			overflow : hidden;
+			font-size : pxToRem(16px);
+			width : pxToRem(230px);
+			margin : 0 auto;
+			color : #4f4f4f;
+			padding : pxToRem(10px) 0;
+			text-align : center;
+			background : url(../images/icon21.png) no-repeat center center;
+		}
+		ul.shareul{
+			width : 100%;
+			margin-top : pxToRem(38px);
+
+			li{
+				display : inline-block;
+				width : 20%;
+				text-align : center;
+
+				span{
+					display : block;
+					margin-top : pxToRem(5px);
+					text-align : center;
+					font-size : 13px;
+					color : #575757;
+				}
+				i.qq{
+					background-position : pxToRem(-100px) pxToRem(-110.5px);
+					width : pxToRem(49px);
+					height : pxToRem(49px);
+					
+				}
+				i.weibo{
+					background-position : pxToRem(-154.5px) pxToRem(-56px);
+					width : pxToRem(49px);
+					height : pxToRem(49px);
+					
+				}
+				i.weixin{
+					background-position : pxToRem(-46.5px) pxToRem(-110.5px);
+					width : pxToRem(48.5px);
+					height : pxToRem(48.5px);
+					
+				}
+				i.weixinp{
+					background-position : pxToRem(-46.5px) pxToRem(-56px);
+					width : pxToRem(48px);
+					height : pxToRem(48px);
+					
+				}
+				i.qqk{
+					background-position : pxToRem(-100px) pxToRem(-56px);
+					width : pxToRem(49px);
+					height : pxToRem(49px);
+					
+				}
+			}
+		}
+	}
+}
+
+.shareAnimate-enter {
+    transition: opacity 0.4s ;
+    opacity : 0;
+}
+.shareAnimate-enter.shareAnimate-enter-active {
+    opacity : 1;
+}
+.shareAnimate-leave {
+	opacity : 1;
+    transition: opacity 0.4s ;
+}
+.shareAnimate-leave.shareAnimate-leave-active {
+    opacity : 0;
+}

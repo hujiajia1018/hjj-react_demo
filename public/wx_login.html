@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+
+<script>
+var r = window.location.search.substr(1) ? window.location.search.substr(1).split('&') : '' ,sr='' ,code = '' ,entid = '',posid='',state='' ,mode='';
+	if(r && r.length){
+		mode = r[1].split('=')[1];
+	}
+	
+	var query = r[0]+'&'+r[2]+'&'+r[3];
+	
+	if(mode==0){
+		window.location.href='http://dev.stu.hongyunbang.net/wechatc?'+query ;
+	}
+	if(mode==1){
+		window.location.href='http://pre.stu.hongyunbang.net/wechatc?'+query;
+	}
+	if(mode==2){
+		window.location.href='http://stu.hongyunbang.net/wechatc?'+query;
+	}
+</script>
+
+</body>
+</html>

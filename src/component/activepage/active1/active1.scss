@@ -1,0 +1,178 @@
+@import "~css/common";
+
+.active1{
+	overflow : hidden;
+	&>.hd{
+		position : fixed;
+		z-index : 80;
+		width : 100%;
+		display : flex;
+		display : -webkit-flex;
+		height : pxToRem(64px);
+		flex-direction : row;
+		flex-wrap : nowrap;
+		justify-content : space-around;
+		align-items : center;
+		color : #4f4f4f;
+		padding : pxToRem(20px) pxToRem(14px) 0 pxToRem(14px);
+		background-image : linear-gradient(45deg,#00D7CC,#2FE9BB);
+
+		span{
+			flex : 1;
+			font-size : pxToRem(14px);
+			a{
+				display : block;
+			}
+			i{
+				position : relative;
+				top : 1px;
+				margin-right : pxToRem(3px);
+				background-position : pxToRem(-104.5px) pxToRem(-14.5px);
+				width : pxToRem(10px);
+				height : pxToRem(18px);
+			}
+			i.sharebtn{
+				display : none;
+				background-position : pxToRem(-184px) 0;
+				width : pxToRem(26px);
+				height : pxToRem(24px);
+			}
+			&:nth-child(2){
+				flex : 1;
+				text-align : center;
+				font-size : pxToRem(18px);
+				color : #fff;
+			}
+			&:nth-child(3){
+				flex : 1;
+				text-align : right;
+				color : #a5aab2;
+				font-size : pxToRem(16px);
+			}
+		}
+	}
+	img.banner{
+		margin-top : pxToRem(64px);
+		width : 100%;
+		height : auto;
+	}
+	.content{
+		padding : pxToRem(20px) pxToRem(30px) 0 pxToRem(30px);
+
+		.help{
+			display : flex;
+			display : -webkit-flex;
+			flex-direction : row;
+			flex-wrap : nowrap;
+			justify-content : space-around;
+			text-align : center;
+
+			&.two{
+				margin-top : pxToRem(15px);
+			}
+			span{
+				display : block;
+				color : #1d1d1d;
+				font-size : pxToRem(16px);
+				font-weight : bold;
+			}
+			p{
+				width : 100%;
+				height : pxToRem(38px);
+				line-height : pxToRem(38px);
+				background : #c7c7cc;
+				font-size : pxToRem(18px);
+				color : #fffffe;
+
+				input{
+					color : #fffffe;
+					font-size : pxToRem(18px);
+					width : 100%;
+					text-align : center;
+				}
+			}
+			div:nth-child(1){
+				flex : 2;
+				em{
+					margin-top : pxToRem(5px);
+					display : block;
+					color : #8c8c8c;
+					font-size : pxToRem(10px);
+				}
+			}
+			div:nth-child(2){
+				flex : 1;
+				i{
+					display : block;
+					position : relative;
+					left : 0;
+					top : pxToRem(-8px);
+					background : url(./icon2.png) no-repeat;
+					background-size : pxToRem(86px) pxToRem(57px);
+					background-position : 0 0;
+					width : pxToRem(86px);
+					height : pxToRem(57px);
+
+					&.on{
+						background : url(./icon3.png) no-repeat;
+						background-size : pxToRem(86px) pxToRem(57px);
+						background-position : 0 0;
+						width : pxToRem(86px);
+					}
+				}
+			}
+			div:nth-child(3){
+				flex : 2;
+			}
+		}
+	}
+	.sub{
+		background : #00ddcc;
+		border-radius : pxToRem(50px);
+		width : pxToRem(195px);
+		height : pxToRem(38px);
+		line-height : pxToRem(38px);
+		font-size : pxToRem(18px);
+		color : #fffffe;
+		text-align : center;
+		margin : pxToRem(25px) auto 0 auto;
+		letter-spacing : 5px;
+
+		&.on{
+			background : #c7c7cc;
+		}
+	}
+	.faq{
+		margin-top : pxToRem(30px);
+		padding : 0 pxToRem(30px);
+		h2{
+			text-align : center;
+			font-size : pxToRem(12px);
+			color : #1d1d1d;
+			background : url(./icon4.gif) repeat-x;
+			background-position : 0 50%;
+			margin-bottom : pxToRem(15px);
+
+			span{
+				display : inline-block;
+				background : #fff;
+				padding : 0 pxToRem(12px);
+			}
+		}
+		p{
+			text-align : left;
+			font-size : pxToRem(12px);
+			color : #8c8c8c;
+			line-height : pxToRem(20px);
+
+			&.end{
+				text-align : center;
+				margin-top : pxToRem(20px);
+				color : #c7c7cc;
+				span{
+					color : #00ddcc;
+				}
+			}
+		}
+	}
+}
